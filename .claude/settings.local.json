@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(cd:*)",
+      "Read(//c/Users/Yujin/AppData/Local/Temp/claude/**)",
+      "Bash(pip install:*)"
+    ]
+  }
+}

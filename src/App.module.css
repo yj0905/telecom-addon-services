@@ -1,0 +1,94 @@
+.app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  color: #fff;
+  padding: 2.5rem 1rem 2rem;
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ── Main ── */
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+  width: 100%;
+}
+
+/* ── Sticky filters ── */
+.stickyTop {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--gray-50);
+  padding: 1rem 0 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+/* ── Meta row ── */
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0 0.75rem;
+  font-size: 0.82rem;
+  color: var(--gray-400);
+}
+
+.resultCount {
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+/* ── States ── */
+.loading, .empty {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: var(--gray-400);
+}
+
+.emptyIcon {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.emptyHint {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  color: var(--gray-300);
+}
+
+@media (max-width: 640px) {
+  .title { font-size: 1.35rem; }
+  .grid { grid-template-columns: 1fr; }
+}
