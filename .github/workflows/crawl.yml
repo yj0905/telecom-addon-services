@@ -2,8 +2,8 @@ name: Crawl Telecom Addon Services
 
 on:
   schedule:
-    # 매일 오전 9시 KST = 00:00 UTC
-    - cron: "0 0 * * *"
+    # 매일 밤 3시 KST = 18:00 UTC (전날)
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,13 +30,8 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r crawler/requirements.txt
 
-      - name: Install Playwright browsers (SKT, KT용)
+      - name: Install Playwright browsers
         run: python -m playwright install chromium --with-deps
-
-      - name: Install Chrome (LGU+ Selenium용)
-        uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: stable
 
       - name: Run crawler
         id: crawl

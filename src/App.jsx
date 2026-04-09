@@ -5,7 +5,7 @@ import ServiceCard from './components/ServiceCard.jsx'
 import Pagination from './components/Pagination.jsx'
 import styles from './App.module.css'
 
-const CATEGORIES = ['데이터', '통화/메시지', '단말케어(보험)', '콘텐츠(OTT/미디어)', '생활편의', '보안/결제', '투자']
+const CATEGORIES = ['데이터', '통화/문자', '기기케어', '안심/보안', '인증/결제', '혜택/편의', '콘텐츠']
 const CARRIERS = ['SKT', 'KT', 'LGU+']
 const PAGE_SIZE = 24
 
@@ -25,7 +25,7 @@ function isFree(svc, carrier) {
 
 function isPaid(svc, carrier) {
   const targets = carrier === '전체' ? svc.carriers : svc.carriers.filter(c => c.carrier === carrier)
-  return targets.some(c => c.price !== 0)
+  return targets.some(c => c.price !== 0 && c.price !== '무료')
 }
 
 export default function App() {
@@ -71,7 +71,7 @@ export default function App() {
       // 텍스트 검색
       if (q) {
         const inName = svc.name.toLowerCase().includes(q)
-        const inDesc = svc.carriers.some(c => c.description.toLowerCase().includes(q))
+        const inDesc = (svc.description || '').toLowerCase().includes(q)
         if (!inName && !inDesc) return false
       }
       return true

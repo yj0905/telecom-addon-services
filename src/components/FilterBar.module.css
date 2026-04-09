@@ -38,14 +38,14 @@
   border-radius: 999px;
   font-size: 0.825rem;
   font-weight: 500;
-  background: var(--gray-100);
+  background: var(--gray-200);
   color: var(--gray-500);
   transition: background 0.15s, color 0.15s;
   white-space: nowrap;
 }
 
 .pill:hover {
-  background: var(--gray-200);
+  background: var(--gray-300);
   color: var(--gray-700);
 }
 

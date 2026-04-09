@@ -1,100 +1,108 @@
 """
-크롤링 결과 병합 및 중복 제거 모듈
+통신 3사 크롤링 결과 병합 모듈
 
-중복 처리 규칙:
-1. 정규화 키: 띄어쓰기 제거 + 'PASS' 접두사 제거 + 소문자 변환
-2. 대표 이름: PASS 붙은 이름 우선, 없으면 먼저 수집된 이름
-3. 같은 통신사 내 중복은 첫 번째 항목만 유지
+- 서비스명 정규화: 공백 제거 + PASS 접두사 제거 + 소문자
+- 대표명: PASS 없는 이름 우선
+- 설명 우선순위: SKT > LGU+ > KT
 """
 import re
+from collections import defaultdict
+
+CARRIER_PRIORITY = ["SKT", "LGU+", "KT"]
 
 
 def normalize_key(name: str) -> str:
-    """이름 정규화 키 생성: 공백 제거 + PASS 접두사 제거 + 소문자"""
-    key = name.strip()
-    key = re.sub(r"\s+", "", key)           # 공백 전부 제거
-    key = re.sub(r"^pass", "", key, flags=re.IGNORECASE)  # 앞의 PASS 제거
-    key = key.lower()
-    return key
+    key = re.sub(r"\s+", "", name.strip())
+    key = re.sub(r"^pass", "", key, flags=re.IGNORECASE)
+    return key.lower()
 
 
-def pick_representative_name(names: list[str]) -> str:
+def pick_name(names: list[str]) -> str:
+    """PASS 없는 이름 우선, 없으면 PASS 있는 것 중 가장 짧은 것"""
+    no_pass = [n for n in names if not re.match(r"^pass", n.strip(), re.IGNORECASE)]
+    if no_pass:
+        return min(no_pass, key=len)
+    return min(names, key=len)
+
+
+def pick_description(carrier_items: list[dict]) -> str:
+    """SKT > LGU+ > KT 순으로 설명 선택"""
+    by_carrier = {item["carrier"]: item.get("description", "") for item in carrier_items}
+    for carrier in CARRIER_PRIORITY:
+        desc = by_carrier.get(carrier, "")
+        if desc:
+            return desc
+    return ""
+
+
+def merge(services: list[dict]) -> tuple[list[dict], list[str]]:
     """
-    대표 이름 결정:
-    1. PASS가 붙은 이름 우선
-    2. PASS 이름이 여럿이면 띄어쓰기 없는 버전 우선 (PASSfoo > PASS foo)
-    3. PASS 없으면 첫 번째 이름
+    flat 서비스 목록을 병합.
+
+    반환:
+    - merged: 병합된 서비스 목록
+    - price_diff_report: 통신사 간 요금이 다른 서비스 보고
     """
-    pass_names = [n for n in names if re.match(r"^pass", n, re.IGNORECASE)]
-    if not pass_names:
-        return names[0]
+    groups: dict[str, dict] = {}  # key → {names, items}
 
-    # 띄어쓰기 없는 버전 우선 (예: PASS스팸차단 > PASS 스팸차단)
-    no_space = [n for n in pass_names if " " not in n.strip()]
-    if no_space:
-        return no_space[0]
-    return pass_names[0]
-
-
-def merge_services(all_items: list[dict]) -> list[dict]:
-    """
-    통신사별 크롤링 결과를 병합하여 중복 제거된 서비스 목록 반환.
-
-    반환 형식:
-    [
-      {
-        "name": "대표 이름",
-        "raw_category": "첫 번째 수집 기준 카테고리",
-        "category": null,
-        "carriers": [
-          {"carrier": "SKT", "price": 990, "description": "...", "url": "..."},
-          ...
-        ]
-      },
-      ...
-    ]
-    """
-    # 정규화 키 → 그룹 매핑
-    groups: dict[str, dict] = {}  # key → {"names": [...], "raw_category": str, "carriers_map": {carrier: item}}
-
-    for item in all_items:
+    for item in services:
         name = item.get("name", "").strip()
         if not name:
             continue
-
         key = normalize_key(name)
-        carrier = item.get("carrier", "")
-
         if key not in groups:
-            groups[key] = {
-                "names": [name],
-                "raw_category": item.get("raw_category", ""),
-                "carriers_map": {},  # carrier → first item
-            }
-        else:
-            if name not in groups[key]["names"]:
-                groups[key]["names"].append(name)
+            groups[key] = {"names": [], "items": []}
+        if name not in groups[key]["names"]:
+            groups[key]["names"].append(name)
+        # 같은 통신사 중복은 첫 번째만 유지
+        existing_carriers = {i["carrier"] for i in groups[key]["items"]}
+        if item["carrier"] not in existing_carriers:
+            groups[key]["items"].append(item)
 
-        # 같은 통신사 내 중복은 첫 번째만 유지
-        if carrier not in groups[key]["carriers_map"]:
-            groups[key]["carriers_map"][carrier] = {
-                "carrier": carrier,
-                "price": item.get("price", 0),
-                "description": item.get("description", ""),
+    merged = []
+    price_diff_report = []
+
+    for key, group in groups.items():
+        items = group["items"]
+        name = pick_name(group["names"])
+        description = pick_description(items)
+
+        carriers = []
+        for item in items:
+            entry = {
+                "carrier": item["carrier"],
+                "price": item["price"],
+                "prod_id": item.get("prod_id", ""),
                 "url": item.get("url", ""),
             }
+            carriers.append(entry)
 
-    # 최종 결과 생성
-    merged = []
-    for key, group in groups.items():
-        rep_name = pick_representative_name(group["names"])
-        carriers = list(group["carriers_map"].values())
+        # 통신사 순서 정렬
+        carrier_order = {c: i for i, c in enumerate(CARRIER_PRIORITY)}
+        carriers.sort(key=lambda c: carrier_order.get(c["carrier"], 99))
+
+        # 통신사 간 요금 차이 확인 (숫자 요금만 비교)
+        int_prices = {c["carrier"]: c["price"] for c in carriers if isinstance(c["price"], int)}
+        if len(set(int_prices.values())) > 1:
+            # 요금이 다르면 통신사별로 분리하고 이름에 통신사 표기
+            price_str = ", ".join(f"{carrier}: {price:,}원" for carrier, price in int_prices.items())
+            price_diff_report.append(f"{name} → {price_str}")
+            for carrier_entry in carriers:
+                carrier_desc = next(
+                    (i.get("description", "") for i in items if i["carrier"] == carrier_entry["carrier"]),
+                    description,
+                )
+                merged.append({
+                    "name": f"{name}({carrier_entry['carrier']})",
+                    "description": carrier_desc,
+                    "carriers": [carrier_entry],
+                })
+            continue
 
         merged.append({
-            "name": rep_name,
-            "raw_category": group["raw_category"],
-            "category": None,
+            "name": name,
+            "description": description,
             "carriers": carriers,
         })
 
-    return merged
+    return merged, price_diff_report

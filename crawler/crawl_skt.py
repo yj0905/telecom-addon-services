@@ -1,160 +1,144 @@
 """
-SKT 부가서비스 크롤러
+SKT 부가서비스 크롤러 (Playwright)
 
-전략:
-- 카테고리 필터(F01231~F01236)별로 API 순회하여 raw_category 확보
-- 마지막에 전체(필터 없음)로 미수집 상품 보완
-- API: /core-product/v1/submain/ont-products
-- page.evaluate()로 내부 fetch() 호출 (쿠키/세션 자동 포함)
+수집 항목: 서비스명, 설명, 요금, 상세페이지 URL
+실행: python crawler/crawl_skt.py
 """
 import re
-from playwright.sync_api import Page
+import sys
+from pathlib import Path
+from playwright.sync_api import sync_playwright, Page
 
 CARRIER = "SKT"
-BASE_PAGE = "https://www.tworld.co.kr/web/product/addon/list?idxCtgCd=F01200"
-API_BASE = (
-    "https://www.tworld.co.kr/core-product/v1/submain/ont-products"
-    "?idxCtgCd=F01200&searchOrder=&searchPageCount=100&searchPageNo="
+BASE_URL = "https://www.tworld.co.kr/web/product/addon/list"
+DETAIL_BASE = "https://www.tworld.co.kr/web/product/callplan"
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/120.0.0.0 Safari/537.36"
 )
-DETAIL_URL = "https://www.tworld.co.kr/web/product/addon/detail?prodId="
-
-# 카테고리 필터 ID → 원본 카테고리명
-FILTERS = {
-    "F01231": "데이터",
-    "F01232": "혜택/편의",
-    "F01233": "안심/보험",
-    "F01234": "통화/메시지",
-    "F01235": "콘텐츠이용",
-    "F01236": "인증/결제",
-}
 
 
-def parse_price(text: str) -> int:
-    if not text:
+def page_url(page_no: int) -> str:
+    return (
+        f"{BASE_URL}?idxCtgCd=F01200&searchFltIds=&searchOrder=recommand"
+        f"&searchPageCount=10&searchPageNo={page_no}"
+    )
+
+
+def parse_price(text: str):
+    """
+    가격 문자열 → 정수 또는 문자열.
+    무료 → 0, 상세참조/파싱 불가 → "유료"
+    """
+    text = text.strip()
+    if not text or "무료" in text:
         return 0
-    text = str(text).strip()
-    if text == "0" or "무료" in text:
-        return 0
-    digits = re.sub(r"[^\d]", "", text)
-    return int(digits) if digits else 0
+    if "상세참조" in text:
+        return "유료"
+    nums = re.findall(r"[\d,]+", text)
+    if not nums:
+        return "유료"
+    return int(nums[0].replace(",", ""))
 
 
-def _fetch_all_pages(page: Page, filter_id: str) -> list[dict]:
-    """특정 필터 ID로 모든 페이지 수집"""
-    results = []
-    page_no = 1
-    while True:
-        url = f"{API_BASE}{page_no}&searchFltIds={filter_id}"
+def get_last_page(pw_page: Page) -> int:
+    """맨 끝페이지 버튼의 data-page 속성으로 마지막 페이지 번호 확인"""
+    el = pw_page.query_selector("a.btn.end[data-page]")
+    if el:
+        val = el.get_attribute("data-page")
+        if val and val.isdigit():
+            return int(val)
+    # 버튼이 없으면 현재 페이지가 마지막
+    return 1
+
+
+def collect_page(pw_page: Page) -> list[dict]:
+    """현재 페이지에서 서비스 목록 수집"""
+    rows = pw_page.query_selector_all("table tbody tr")
+    items = []
+
+    for row in rows:
         try:
-            data = page.evaluate(f"""async () => {{
-                const resp = await fetch('{url}', {{
-                    headers: {{ 'Accept': 'application/json', 'Referer': '{BASE_PAGE}' }}
-                }});
-                return resp.json();
-            }}""")
-        except Exception as e:
-            print(f"[SKT] fetch 오류 (filter={filter_id}, page={page_no}): {e}")
-            break
-
-        products = data.get("result", {}).get("products", [])
-        if not products:
-            break
-        results.extend(products)
-
-        # 전체 카운트 확인
-        if page_no == 1:
-            total = data.get("result", {}).get("productCount", 0)
-            total_pages = (total + 99) // 100  # pageCount=100
-            if total_pages <= 1:
-                break
-
-        if len(results) >= data.get("result", {}).get("productCount", 0):
-            break
-        page_no += 1
-
-    return results
-
-
-def crawl(page: Page) -> list[dict]:
-    results: list[dict] = []
-    seen_ids: set[str] = set()
-
-    print("[SKT] 크롤링 시작 (카테고리 필터별 순회)")
-
-    # 메인 페이지 로드로 쿠키/세션 확보
-    try:
-        page.goto(BASE_PAGE, wait_until="networkidle", timeout=30000)
-    except Exception as e:
-        print(f"[SKT] 페이지 로드 실패: {e}")
-        return results
-
-    # ── 카테고리 필터별 수집 ──
-    for flt_id, flt_name in FILTERS.items():
-        print(f"[SKT] 카테고리 '{flt_name}' ({flt_id}) 수집 중...")
-        products = _fetch_all_pages(page, flt_id)
-        cat_new = 0
-        for prod in products:
-            prod_id = prod.get("prodId", "")
-            if prod_id in seen_ids:
-                continue  # 다른 카테고리에서 이미 수집
-            seen_ids.add(prod_id)
-            results.append(_make_item(prod, flt_name))
-            cat_new += 1
-        print(f"[SKT]   → {len(products)}개 중 신규 {cat_new}개 (누적: {len(results)}개)")
-
-    # ── 카테고리 없는 상품 보완 (전체 목록에서 미수집 항목) ──
-    print("[SKT] 전체 목록으로 미수집 상품 보완 중...")
-    uncategorized_page_no = 1
-    uncategorized_new = 0
-    while True:
-        url = f"{API_BASE}{uncategorized_page_no}&searchFltIds="
-        try:
-            data = page.evaluate(f"""async () => {{
-                const resp = await fetch('{url}', {{
-                    headers: {{ 'Accept': 'application/json', 'Referer': '{BASE_PAGE}' }}
-                }});
-                return resp.json();
-            }}""")
-        except Exception as e:
-            print(f"[SKT] 전체 목록 fetch 오류 (page={uncategorized_page_no}): {e}")
-            break
-
-        products = data.get("result", {}).get("products", [])
-        if not products:
-            break
-
-        for prod in products:
-            prod_id = prod.get("prodId", "")
-            if prod_id in seen_ids:
+            # 서비스명 + prod_id
+            name_el = row.query_selector("td:first-child span a[data-prod-id]")
+            if not name_el:
                 continue
-            seen_ids.add(prod_id)
-            results.append(_make_item(prod, ""))  # raw_category 빈 문자열
-            uncategorized_new += 1
+            name = name_el.inner_text().strip()
+            prod_id = name_el.get_attribute("data-prod-id") or ""
 
-        if uncategorized_page_no == 1:
-            total = data.get("result", {}).get("productCount", 0)
-            total_pages = (total + 99) // 100
-            if total_pages <= 1:
-                break
-        if len(seen_ids) >= data.get("result", {}).get("productCount", 0):
-            break
-        uncategorized_page_no += 1
+            # 설명
+            desc_el = row.query_selector("td:first-child p")
+            description = desc_el.inner_text().strip() if desc_el else ""
 
-    if uncategorized_new:
-        print(f"[SKT] 미분류 보완: {uncategorized_new}개")
+            # 요금
+            price_el = row.query_selector("td.fee")
+            price = parse_price(price_el.inner_text() if price_el else "")
 
-    print(f"[SKT] 크롤링 완료: {len(results)}개")
+            url = f"{DETAIL_BASE}/{prod_id}" if prod_id else ""
+
+            items.append({
+                "carrier": CARRIER,
+                "name": name,
+                "description": description,
+                "price": price,
+                "prod_id": prod_id,
+                "url": url,
+            })
+        except Exception as e:
+            print(f"[SKT] 행 파싱 오류: {e}")
+            continue
+
+    return items
+
+
+def crawl(pw_page: Page) -> list[dict]:
+    """SKT 부가서비스 전체 크롤링"""
+    results = []
+
+    # 1페이지 로드 후 마지막 페이지 확인
+    pw_page.goto(page_url(1), wait_until="networkidle", timeout=30_000)
+    pw_page.wait_for_selector("a[data-prod-id]", timeout=20_000)
+
+    last_page = get_last_page(pw_page)
+    print(f"[SKT] 총 {last_page}페이지")
+
+    items = collect_page(pw_page)
+    results.extend(items)
+    print(f"[SKT] 페이지 1: {len(items)}개 (누적: {len(results)}개)")
+
+    for page_no in range(2, last_page + 1):
+        pw_page.goto(page_url(page_no), wait_until="networkidle", timeout=30_000)
+        pw_page.wait_for_selector("a[data-prod-id]", timeout=20_000)
+
+        items = collect_page(pw_page)
+        results.extend(items)
+        print(f"[SKT] 페이지 {page_no}: {len(items)}개 (누적: {len(results)}개)")
+
+    print(f"[SKT] 완료: {len(results)}개")
     return results
 
 
-def _make_item(prod: dict, raw_category: str) -> dict:
-    prod_id = prod.get("prodId", "")
-    return {
-        "carrier": CARRIER,
-        "name": prod.get("prodNm", "").strip(),
-        "raw_category": raw_category,
-        "category": None,
-        "price": parse_price(prod.get("basFeeAmt", "0")),
-        "description": prod.get("prodSmryDesc", "").strip(),
-        "url": f"{DETAIL_URL}{prod_id}" if prod_id else BASE_PAGE,
-    }
+if __name__ == "__main__":
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox",
+                  "--disable-blink-features=AutomationControlled"],
+        )
+        context = browser.new_context(
+            user_agent=USER_AGENT,
+            viewport={"width": 1280, "height": 900},
+            locale="ko-KR",
+        )
+        page = context.new_page()
+        items = crawl(page)
+        context.close()
+        browser.close()
+
+    import json
+    out = Path(__file__).parent.parent / "public" / "data" / "skt_raw.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(items, f, ensure_ascii=False, indent=2)
+    print(f"저장: {out} ({len(items)}개)")

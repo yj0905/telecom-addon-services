@@ -7,37 +7,50 @@ const CARRIER_META = {
   'LGU+': { label: 'LGU+', color: '#9B26AF', bg: '#F5EAF8' },
 }
 
-function formatPrice(price, priceMax) {
+function formatPrice(price) {
   if (price === 0) return '무료'
   if (price === -1) return '유료'
-  if (price === -2) return '무료/유료'
-  const base = price.toLocaleString('ko-KR') + '원'
-  if (priceMax != null && priceMax !== price) {
-    return base + ' ~ ' + priceMax.toLocaleString('ko-KR') + '원'
+  if (typeof price === 'string') {
+    // "1100~11000" → "1,100원~11,000원"
+    const rangeMatch = price.match(/^(\d+)~(\d+)$/)
+    if (rangeMatch) {
+      const lo = Number(rangeMatch[1]).toLocaleString('ko-KR')
+      const hi = Number(rangeMatch[2]).toLocaleString('ko-KR')
+      return `${lo}원~${hi}원`
+    }
+    return price  // "유료", "유료/무료" 등
   }
-  return base
+  return price.toLocaleString('ko-KR') + '원'
 }
 
 function getPriceRange(carriers) {
-  const allPrices = carriers.flatMap(c => {
-    const ps = [c.price]
-    if (c.price_max != null && c.price_max !== c.price) ps.push(c.price_max)
-    return ps
-  })
-  const min = Math.min(...allPrices)
-  const max = Math.max(...allPrices)
-  if (min === max) return formatPrice(min)
-  return `${formatPrice(min)} ~ ${formatPrice(max)}`
+  const prices = carriers.map(c => c.price)
+  const numPrices = prices.filter(p => typeof p === 'number')
+  const strPrices = prices.filter(p => typeof p === 'string')
+
+  if (numPrices.length === 0 && strPrices.length > 0) {
+    const unique = [...new Set(strPrices)]
+    return unique.length === 1 ? unique[0] : unique.join(' / ')
+  }
+  if (numPrices.length > 0) {
+    const min = Math.min(...numPrices)
+    const max = Math.max(...numPrices)
+    const base = min === max ? formatPrice(min) : `${formatPrice(min)} ~ ${formatPrice(max)}`
+    if (strPrices.length > 0) return `${base} / ${[...new Set(strPrices)].join(' / ')}`
+    return base
+  }
+  return ''
 }
 
 export default function ServiceCard({ service, selectedCarrier }) {
   const [expanded, setExpanded] = useState(false)
 
-  const visibleCarriers = selectedCarrier === '전체'
+  const priceCarriers = selectedCarrier === '전체'
     ? service.carriers
     : service.carriers.filter(c => c.carrier === selectedCarrier)
 
-  const priceLabel = getPriceRange(visibleCarriers)
+  const priceLabel = getPriceRange(priceCarriers)
+  const description = service.description || ''
 
   return (
     <article
@@ -52,7 +65,7 @@ export default function ServiceCard({ service, selectedCarrier }) {
       <div className={styles.header}>
         <div className={styles.top}>
           <div className={styles.badges}>
-            {visibleCarriers.map(c => {
+            {service.carriers.map(c => {
               const meta = CARRIER_META[c.carrier] ?? { label: c.carrier, color: '#666', bg: '#eee' }
               return (
                 <span
@@ -70,20 +83,24 @@ export default function ServiceCard({ service, selectedCarrier }) {
           </span>
         </div>
 
-        <h2 className={styles.name}>{service.name}</h2>
+        <h2 className={styles.name}>
+          {service.is_new && <span className={styles.badgeNew}>신규</span>}
+          {service.name}
+        </h2>
 
         <div className={styles.footer}>
           {service.category && (
             <span className={styles.category}>{service.category}</span>
           )}
-          <span className={styles.price}>{priceLabel}</span>
+          {!expanded && <span className={styles.price}>{priceLabel}</span>}
         </div>
       </div>
 
       {/* ── 펼쳐진 상세 ── */}
       {expanded && (
         <div className={styles.detail} onClick={e => e.stopPropagation()}>
-          {visibleCarriers.map(c => {
+          {description && <p className={styles.desc}>{description}</p>}
+          {service.carriers.map(c => {
             const meta = CARRIER_META[c.carrier] ?? { label: c.carrier, color: '#666', bg: '#eee' }
             return (
               <div key={c.carrier} className={styles.carrierBlock}>
@@ -94,11 +111,19 @@ export default function ServiceCard({ service, selectedCarrier }) {
                   >
                     {meta.label}
                   </span>
-                  <span className={styles.carrierPrice}>{formatPrice(c.price, c.price_max)}</span>
+                  <span className={styles.carrierPrice}>{formatPrice(c.price)}</span>
+                  {c.url && (
+                    <a
+                      href={c.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.detailLink}
+                      onClick={e => e.stopPropagation()}
+                    >
+                      자세히보기 →
+                    </a>
+                  )}
                 </div>
-                {c.description && (
-                  <p className={styles.desc}>{c.description}</p>
-                )}
               </div>
             )
           })}
