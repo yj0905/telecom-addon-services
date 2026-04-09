@@ -93,10 +93,25 @@ def main():
     new_services = [s for s in merged_services if normalize_key(s["name"]) not in existing_keys]
     old_services = [s for s in merged_services if normalize_key(s["name"]) in existing_keys]
 
+    today = started_at.date().isoformat()
     for svc in new_services:
-        svc["is_new"] = True
+        svc["new_since"] = today
+
+    # 기존 서비스의 new_since 유지
+    existing_new_since = {}
+    if OUTPUT_PATH.exists():
+        try:
+            with open(OUTPUT_PATH, encoding="utf-8") as f:
+                existing = json.load(f)
+            for s in existing.get("services", []):
+                if "new_since" in s:
+                    existing_new_since[normalize_key(s["name"])] = s["new_since"]
+        except Exception:
+            pass
     for svc in old_services:
-        svc.pop("is_new", None)
+        key = normalize_key(svc["name"])
+        if key in existing_new_since:
+            svc["new_since"] = existing_new_since[key]
 
     sorted_services = new_services + old_services
 

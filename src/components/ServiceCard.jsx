@@ -42,6 +42,12 @@ function getPriceRange(carriers) {
   return ''
 }
 
+function isNew(new_since) {
+  if (!new_since) return false
+  const diff = Date.now() - new Date(new_since).getTime()
+  return diff < 30 * 24 * 60 * 60 * 1000
+}
+
 export default function ServiceCard({ service, selectedCarrier }) {
   const [expanded, setExpanded] = useState(false)
 
@@ -84,7 +90,7 @@ export default function ServiceCard({ service, selectedCarrier }) {
         </div>
 
         <h2 className={styles.name}>
-          {service.is_new && <span className={styles.badgeNew}>신규</span>}
+          {isNew(service.new_since) && <span className={styles.badgeNew}>신규</span>}
           {service.name}
         </h2>
 

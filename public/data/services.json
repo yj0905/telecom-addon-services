@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "무비와컬처",
-      "is_new": true,
+      "new_since": "2026-04-09",
       "description": "다양한 장르의 영화를 무제한 스트리밍으로 볼 수 있고 국내 공연 등 문화 정보 제공 서비스",
       "carriers": [
         {
