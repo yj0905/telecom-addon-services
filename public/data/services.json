@@ -1,34 +1,6 @@
 {
-  "updated_at": "2026-04-11T04:02:39.694802+09:00",
+  "updated_at": "2026-04-12T03:54:53.653371+09:00",
   "services": [
-    {
-      "name": "LTE 데이터쉐어링",
-      "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 8250,
-          "prod_id": "803",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=803"
-        }
-      ],
-      "new_since": "2026-04-11",
-      "category": "데이터"
-    },
-    {
-      "name": "밀리의서재",
-      "description": "밀리의서재 전자책 월 정기구독\n다양한 도서 콘텐츠 열람 무제한\n오디오북, 챗북 오브제북 등 다양한 북콘텐츠",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 9900,
-          "prod_id": "1585",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585"
-        }
-      ],
-      "new_since": "2026-04-11",
-      "category": "콘텐츠"
-    },
     {
       "name": "무비와컬처",
       "description": "다양한 장르의 영화를 무제한 스트리밍으로 볼 수 있고 국내 공연 등 문화 정보 제공 서비스",
@@ -4060,6 +4032,20 @@
       "category": "데이터"
     },
     {
+      "name": "LTE 데이터쉐어링",
+      "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8250,
+          "prod_id": "803",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=803"
+        }
+      ],
+      "new_since": "2026-04-11",
+      "category": "데이터"
+    },
+    {
       "name": "5G 데이터쉐어링",
       "description": "5G 요금제 전용\n스마트기기로 데이터 공유",
       "carriers": [
@@ -4343,6 +4329,20 @@
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1615"
         }
       ],
+      "category": "콘텐츠"
+    },
+    {
+      "name": "밀리의서재",
+      "description": "밀리의서재 전자책 월 정기구독\n다양한 도서 콘텐츠 열람 무제한\n오디오북, 챗북 오브제북 등 다양한 북콘텐츠",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 9900,
+          "prod_id": "1585",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585"
+        }
+      ],
+      "new_since": "2026-04-11",
       "category": "콘텐츠"
     },
     {
