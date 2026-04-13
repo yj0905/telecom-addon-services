@@ -140,7 +140,7 @@ def crawl(pw_page: Page) -> list[dict]:
 
     for filter_code in FILTER_CODES:
         print(f"[KT] FilterCode={filter_code} 로드 중...")
-        pw_page.goto(filter_url(filter_code), wait_until="networkidle", timeout=30_000)
+        pw_page.goto(filter_url(filter_code), wait_until="load", timeout=60_000)
         pw_page.wait_for_selector("table tbody tr", timeout=15_000)
 
         total = get_total_count(pw_page)

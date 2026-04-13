@@ -97,7 +97,7 @@ def crawl(pw_page: Page) -> list[dict]:
     results = []
 
     # 1페이지 로드 후 마지막 페이지 확인
-    pw_page.goto(page_url(1), wait_until="networkidle", timeout=30_000)
+    pw_page.goto(page_url(1), wait_until="load", timeout=60_000)
     pw_page.wait_for_selector("a[data-prod-id]", timeout=20_000)
 
     last_page = get_last_page(pw_page)
@@ -108,7 +108,7 @@ def crawl(pw_page: Page) -> list[dict]:
     print(f"[SKT] 페이지 1: {len(items)}개 (누적: {len(results)}개)")
 
     for page_no in range(2, last_page + 1):
-        pw_page.goto(page_url(page_no), wait_until="networkidle", timeout=30_000)
+        pw_page.goto(page_url(page_no), wait_until="load", timeout=60_000)
         pw_page.wait_for_selector("a[data-prod-id]", timeout=20_000)
 
         items = collect_page(pw_page)

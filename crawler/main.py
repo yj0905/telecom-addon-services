@@ -26,6 +26,30 @@ USER_AGENT = (
 )
 
 
+def load_fallback(carrier: str) -> list[dict]:
+    """기존 services.json에서 특정 통신사 데이터를 복원"""
+    if not OUTPUT_PATH.exists():
+        return []
+    try:
+        with open(OUTPUT_PATH, encoding="utf-8") as f:
+            existing = json.load(f)
+        items = []
+        for svc in existing.get("services", []):
+            for c in svc.get("carriers", []):
+                if c["carrier"] == carrier:
+                    items.append({
+                        "name": svc["name"],
+                        "carrier": carrier,
+                        "price": c["price"],
+                        "description": svc.get("description", ""),
+                        "prod_id": c.get("prod_id", ""),
+                        "url": c.get("url", ""),
+                    })
+        return items
+    except Exception:
+        return []
+
+
 def main():
     started_at = datetime.now(KST)
     print(f"크롤링 시작: {started_at.strftime('%Y-%m-%d %H:%M:%S KST')}")
@@ -48,26 +72,41 @@ def main():
         # SKT
         try:
             skt_items = crawl_skt(page)
-            all_services.extend(skt_items)
-            print(f"SKT: {len(skt_items)}개")
+            if skt_items:
+                all_services.extend(skt_items)
+                print(f"SKT: {len(skt_items)}개")
+            else:
+                raise ValueError("수집된 항목 없음")
         except Exception as e:
-            print(f"SKT 크롤링 실패: {e}")
+            fallback = load_fallback("SKT")
+            all_services.extend(fallback)
+            print(f"SKT 크롤링 실패 ({e}), 기존 데이터 {len(fallback)}개 유지")
 
         # KT
         try:
             kt_items = crawl_kt(page)
-            all_services.extend(kt_items)
-            print(f"KT: {len(kt_items)}개")
+            if kt_items:
+                all_services.extend(kt_items)
+                print(f"KT: {len(kt_items)}개")
+            else:
+                raise ValueError("수집된 항목 없음")
         except Exception as e:
-            print(f"KT 크롤링 실패: {e}")
+            fallback = load_fallback("KT")
+            all_services.extend(fallback)
+            print(f"KT 크롤링 실패 ({e}), 기존 데이터 {len(fallback)}개 유지")
 
         # LGU+
         try:
             lgu_items = crawl_lgu(page)
-            all_services.extend(lgu_items)
-            print(f"LGU+: {len(lgu_items)}개")
+            if lgu_items:
+                all_services.extend(lgu_items)
+                print(f"LGU+: {len(lgu_items)}개")
+            else:
+                raise ValueError("수집된 항목 없음")
         except Exception as e:
-            print(f"LGU+ 크롤링 실패: {e}")
+            fallback = load_fallback("LGU+")
+            all_services.extend(fallback)
+            print(f"LGU+ 크롤링 실패 ({e}), 기존 데이터 {len(fallback)}개 유지")
 
         context.close()
         browser.close()
