@@ -114,7 +114,7 @@ def crawl_slug(pw_page: Page, slug: str, seen_ids: set) -> list[dict]:
     url = f"{BASE_URL}/{slug}"
     print(f"[LGU+] {slug} 로드 중...")
     pw_page.goto(url, wait_until="load", timeout=60_000)
-    pw_page.wait_for_selector("button[data-ec-product]", timeout=20_000)
+    pw_page.wait_for_selector("button[data-ec-product]", timeout=40_000)
 
     results = []
     page_no = 1
