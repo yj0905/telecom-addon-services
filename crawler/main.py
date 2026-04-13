@@ -95,18 +95,24 @@ def main():
             all_services.extend(fallback)
             print(f"KT 크롤링 실패 ({e}), 기존 데이터 {len(fallback)}개 유지")
 
-        # LGU+
-        try:
-            lgu_items = crawl_lgu(page)
-            if lgu_items:
-                all_services.extend(lgu_items)
-                print(f"LGU+: {len(lgu_items)}개")
-            else:
-                raise ValueError("수집된 항목 없음")
-        except Exception as e:
+        # LGU+ (CI 환경에서는 Cloudflare 차단으로 건너뜀)
+        import os
+        if os.environ.get("CI"):
             fallback = load_fallback("LGU+")
             all_services.extend(fallback)
-            print(f"LGU+ 크롤링 실패 ({e}), 기존 데이터 {len(fallback)}개 유지")
+            print(f"LGU+: CI 환경 건너뜀, 기존 데이터 {len(fallback)}개 유지")
+        else:
+            try:
+                lgu_items = crawl_lgu(page)
+                if lgu_items:
+                    all_services.extend(lgu_items)
+                    print(f"LGU+: {len(lgu_items)}개")
+                else:
+                    raise ValueError("수집된 항목 없음")
+            except Exception as e:
+                fallback = load_fallback("LGU+")
+                all_services.extend(fallback)
+                print(f"LGU+ 크롤링 실패 ({e}), 기존 데이터 {len(fallback)}개 유지")
 
         context.close()
         browser.close()
