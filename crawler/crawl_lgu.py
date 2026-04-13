@@ -114,6 +114,16 @@ def crawl_slug(pw_page: Page, slug: str, seen_ids: set) -> list[dict]:
     url = f"{BASE_URL}/{slug}"
     print(f"[LGU+] {slug} 로드 중...")
     pw_page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+
+    # 디버그: 페이지 상태 확인
+    import os
+    if os.environ.get("CI"):
+        screenshot_path = f"/tmp/lgu_{slug}.png"
+        pw_page.screenshot(path=screenshot_path)
+        print(f"[LGU+] 스크린샷 저장: {screenshot_path}")
+        print(f"[LGU+] 페이지 타이틀: {pw_page.title()}")
+        print(f"[LGU+] 버튼 수: {len(pw_page.query_selector_all('button[data-ec-product]'))}")
+
     pw_page.wait_for_selector("button[data-ec-product]", timeout=60_000)
 
     results = []
