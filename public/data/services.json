@@ -1,6 +1,48 @@
 {
-  "updated_at": "2026-04-14T04:38:06.171907+09:00",
+  "updated_at": "2026-04-15T04:25:10.389870+09:00",
   "services": [
+    {
+      "name": "휴대폰번호보호",
+      "description": "휴대폰 본인인증시 비밀번호 사전설정으로 휴대폰번호 도용방지하는 서비스입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00002666",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00002666"
+        }
+      ],
+      "new_since": "2026-04-15",
+      "category": "인증/결제"
+    },
+    {
+      "name": "유튜브 프리미엄+메가MGC커피",
+      "description": "광고로 끊김 없는 동영상\n오프라인 저장 및 백그라운드 재생\n메가MGC커피 아메리카노(HOT) 매월 최대 3잔 제공",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8500,
+          "prod_id": "1678",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1678"
+        }
+      ],
+      "new_since": "2026-04-15",
+      "category": "콘텐츠"
+    },
+    {
+      "name": "유튜브 프리미엄 (KT 구독)",
+      "description": "광고 없이 백그라운드 재생\n오프라인 저장\nYouTube Music Premium",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8000,
+          "prod_id": "1581",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581"
+        }
+      ],
+      "new_since": "2026-04-15",
+      "category": "콘텐츠"
+    },
     {
       "name": "무비와컬처",
       "description": "다양한 장르의 영화를 무제한 스트리밍으로 볼 수 있고 국내 공연 등 문화 정보 제공 서비스",
@@ -2436,25 +2478,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "모션키",
-      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00006435",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0003975",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
       "name": "스마트안전결제",
       "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
       "carriers": [
@@ -2472,6 +2495,25 @@
         }
       ],
       "category": "통화/문자"
+    },
+    {
+      "name": "모션키",
+      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00006435",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0003975",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
+        }
+      ],
+      "category": "인증/결제"
     },
     {
       "name": "스마트피싱보호",
@@ -4107,19 +4149,6 @@
       "category": "통화/문자"
     },
     {
-      "name": "퀵보이스",
-      "description": "통화할 수 없는 상황에서 음성메시지를 빠르게 전달하고, 수신여부 확인이 가능한 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00000272",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00000272"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
       "name": "통화가능통보",
       "description": "상대방의 통화가 끝나면 문자로 알려 드려요.",
       "carriers": [
@@ -4576,25 +4605,6 @@
           "price": 9900,
           "prod_id": "1583",
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1583"
-        }
-      ],
-      "category": "콘텐츠"
-    },
-    {
-      "name": "유튜브 프리미엄",
-      "description": "U⁺통신료와 한번에 결제하고 더욱 편리하게 이용할 수 있는 유튜브 프리미엄 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": "유료",
-          "prod_id": "LRZ0004181",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ0004181"
-        },
-        {
-          "carrier": "KT",
-          "price": 13900,
-          "prod_id": "1581",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581"
         }
       ],
       "category": "콘텐츠"
@@ -5786,6 +5796,19 @@
         }
       ],
       "category": "안심/보안"
+    },
+    {
+      "name": "유튜브 프리미엄",
+      "description": "U⁺통신료와 한번에 결제하고 더욱 편리하게 이용할 수 있는 유튜브 프리미엄 서비스",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": "유료",
+          "prod_id": "LRZ0004181",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ0004181"
+        }
+      ],
+      "category": "콘텐츠"
     },
     {
       "name": "LTE 데이터쉐어링(LGU+)",
