@@ -1,6 +1,48 @@
 {
-  "updated_at": "2026-04-13T11:26:21.978446+09:00",
+  "updated_at": "2026-04-16T04:27:31.398294+09:00",
   "services": [
+    {
+      "name": "휴대폰번호보호",
+      "description": "휴대폰 본인인증시 비밀번호 사전설정으로 휴대폰번호 도용방지하는 서비스입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00002666",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00002666"
+        }
+      ],
+      "new_since": "2026-04-16",
+      "category": "인증/결제"
+    },
+    {
+      "name": "유튜브 프리미엄+메가MGC커피",
+      "description": "광고로 끊김 없는 동영상\n오프라인 저장 및 백그라운드 재생\n메가MGC커피 아메리카노(HOT) 매월 최대 3잔 제공",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8500,
+          "prod_id": "1678",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1678"
+        }
+      ],
+      "new_since": "2026-04-16",
+      "category": "콘텐츠"
+    },
+    {
+      "name": "유튜브 프리미엄 (KT 구독)",
+      "description": "광고 없이 백그라운드 재생\n오프라인 저장\nYouTube Music Premium",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8000,
+          "prod_id": "1581",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581"
+        }
+      ],
+      "new_since": "2026-04-16",
+      "category": "콘텐츠"
+    },
     {
       "name": "무비와컬처",
       "description": "다양한 장르의 영화를 무제한 스트리밍으로 볼 수 있고 국내 공연 등 문화 정보 제공 서비스",
@@ -453,6 +495,12 @@
           "price": 3300,
           "prod_id": "NC00000220",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000220"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 3300,
+          "prod_id": "LRZ1005512",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ1005512"
         }
       ],
       "category": "안심/보안"
@@ -674,6 +722,12 @@
           "price": 4400,
           "prod_id": "NC00000202",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000202"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ1002703",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002703"
         }
       ],
       "category": "안심/보안"
@@ -739,6 +793,12 @@
           "price": 9900,
           "prod_id": "NA00008838",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00008838"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ1002699",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002699"
         }
       ],
       "category": "혜택/편의"
@@ -973,6 +1033,12 @@
           "price": 3850,
           "prod_id": "NA00008636",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00008636"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ1002701",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002701"
         }
       ],
       "category": "혜택/편의"
@@ -1116,6 +1182,12 @@
           "price": 3300,
           "prod_id": "NC00000146",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000146"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0003896",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003896"
         }
       ],
       "category": "안심/보안"
@@ -1181,6 +1253,12 @@
           "price": 0,
           "prod_id": "NA00008634",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00008634"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "LRZ1002321",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ1002321"
         }
       ],
       "category": "안심/보안"
@@ -1350,6 +1428,12 @@
           "price": 2200,
           "prod_id": "NC00000149",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000149"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0004435",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0004435"
         }
       ],
       "category": "혜택/편의"
@@ -1428,6 +1512,12 @@
           "price": 1650,
           "prod_id": "NC00000144",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000144"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1650,
+          "prod_id": "LRZ1000064",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ1000064"
         }
       ],
       "category": "안심/보안"
@@ -1441,6 +1531,12 @@
           "price": 3300,
           "prod_id": "NA00007600",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00007600"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 3300,
+          "prod_id": "LRZ0004076",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0004076"
         }
       ],
       "category": "통화/문자"
@@ -1493,6 +1589,12 @@
           "price": 3300,
           "prod_id": "NA00007266",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00007266"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0003837",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003837"
         }
       ],
       "category": "혜택/편의"
@@ -1506,6 +1608,12 @@
           "price": 11000,
           "prod_id": "NA00004935",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00004935"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 11000,
+          "prod_id": "LRZ0002692",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0002692"
         }
       ],
       "category": "혜택/편의"
@@ -1610,6 +1718,12 @@
           "price": 3300,
           "prod_id": "NC00000145",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000145"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 3300,
+          "prod_id": "LRZ0003143",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003143"
         }
       ],
       "category": "안심/보안"
@@ -1636,6 +1750,12 @@
           "price": 990,
           "prod_id": "NA00007093",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00007093"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 990,
+          "prod_id": "LRZ0004116",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004116"
         }
       ],
       "category": "통화/문자"
@@ -1649,6 +1769,12 @@
           "price": 3300,
           "prod_id": "NC00000143",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000143"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0003144",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003144"
         }
       ],
       "category": "혜택/편의"
@@ -1662,6 +1788,12 @@
           "price": 3300,
           "prod_id": "NA00007351",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00007351"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 3300,
+          "prod_id": "LRZ0003150",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003150"
         }
       ],
       "category": "혜택/편의"
@@ -1727,6 +1859,12 @@
           "price": 3300,
           "prod_id": "NA00007265",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00007265"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0020260",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0020260"
         }
       ],
       "category": "혜택/편의"
@@ -1753,6 +1891,12 @@
           "price": 3300,
           "prod_id": "NA00007269",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00007269"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0003997",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003997"
         }
       ],
       "category": "인증/결제"
@@ -1857,6 +2001,12 @@
           "price": 2200,
           "prod_id": "NC00000093",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000093"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 2200,
+          "prod_id": "LRZ0004102",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0004102"
         }
       ],
       "category": "안심/보안"
@@ -1870,6 +2020,12 @@
           "price": 3300,
           "prod_id": "NC00000091",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000091"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0001745",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0001745"
         }
       ],
       "category": "통화/문자"
@@ -1883,6 +2039,12 @@
           "price": 3300,
           "prod_id": "NA00007017",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00007017"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 3300,
+          "prod_id": "LRZ0002150",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-ringtones-callertunes/LRZ0002150"
         },
         {
           "carrier": "KT",
@@ -2063,7 +2225,7 @@
       "category": "데이터"
     },
     {
-      "name": "PASS 해외주식정보",
+      "name": "PASS해외주식정보",
       "description": "PASS 앱에서 해외 주식 투자 정보를 받아볼 수 있는 유료 부가서비스",
       "carriers": [
         {
@@ -2071,6 +2233,12 @@
           "price": 5500,
           "prod_id": "NA00006231",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00006231"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0003953",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003953"
         }
       ],
       "category": "혜택/편의"
@@ -2310,19 +2478,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "모션키",
-      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00006435",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
       "name": "스마트안전결제",
       "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
       "carriers": [
@@ -2331,9 +2486,34 @@
           "price": 990,
           "prod_id": "NA00006378",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00006378"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 990,
+          "prod_id": "LRZ0004132",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004132"
         }
       ],
       "category": "통화/문자"
+    },
+    {
+      "name": "모션키",
+      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00006435",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0003975",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
+        }
+      ],
+      "category": "인증/결제"
     },
     {
       "name": "스마트피싱보호",
@@ -2344,6 +2524,12 @@
           "price": 1650,
           "prod_id": "NC00000068",
           "url": "https://www.tworld.co.kr/web/product/callplan/NC00000068"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1650,
+          "prod_id": "LRZ0003894",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003894"
         }
       ],
       "category": "안심/보안"
@@ -3111,6 +3297,12 @@
           "price": 1100,
           "prod_id": "NA00004251",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00004251"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0002426",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0002426"
         }
       ],
       "category": "인증/결제"
@@ -3410,6 +3602,12 @@
           "price": 1100,
           "prod_id": "NA00003691",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00003691"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0020256",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0020256"
         }
       ],
       "category": "인증/결제"
@@ -3553,6 +3751,12 @@
           "price": 0,
           "prod_id": "NA00000302",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00000302"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "LRZ0001221",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/LRZ0001221"
         }
       ],
       "category": "통화/문자"
@@ -3579,6 +3783,12 @@
           "price": 0,
           "prod_id": "NA00000304",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00000304"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "LRZ0000382",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/LRZ0000382"
         }
       ],
       "category": "통화/문자"
@@ -3592,6 +3802,12 @@
           "price": 0,
           "prod_id": "NA00000307",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00000307"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "Z100000008",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100000008"
         },
         {
           "carrier": "KT",
@@ -3611,6 +3827,12 @@
           "price": 0,
           "prod_id": "NA00004406",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00004406"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "LRZ0002297",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/LRZ0002297"
         }
       ],
       "category": "통화/문자"
@@ -3780,6 +4002,12 @@
           "price": 1100,
           "prod_id": "NA00005622",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00005622"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0020258",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0020258"
         }
       ],
       "category": "안심/보안"
@@ -3863,7 +4091,7 @@
       "category": "통화/문자"
     },
     {
-      "name": "전화번호 안심로그인",
+      "name": "전화번호안심로그인",
       "description": "휴대폰번호와 6자리 USIM인증번호로 로그인할수 있는 간편하고 안전한 로그인 서비스",
       "carriers": [
         {
@@ -3871,6 +4099,12 @@
           "price": 1100,
           "prod_id": "NA00004602",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00004602"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0002622",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0002622"
         }
       ],
       "category": "인증/결제"
@@ -3915,19 +4149,6 @@
       "category": "통화/문자"
     },
     {
-      "name": "퀵보이스",
-      "description": "통화할 수 없는 상황에서 음성메시지를 빠르게 전달하고, 수신여부 확인이 가능한 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00000272",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00000272"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
       "name": "통화가능통보",
       "description": "상대방의 통화가 끝나면 문자로 알려 드려요.",
       "carriers": [
@@ -3962,6 +4183,12 @@
           "price": 0,
           "prod_id": "NA00000292",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00000292"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "Z100000006",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100000006"
         }
       ],
       "category": "통화/문자"
@@ -4378,19 +4605,6 @@
           "price": 9900,
           "prod_id": "1583",
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1583"
-        }
-      ],
-      "category": "콘텐츠"
-    },
-    {
-      "name": "유튜브 프리미엄",
-      "description": "광고 없이 백그라운드 재생\n오프라인 저장\nYouTube Music Premium",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 13900,
-          "prod_id": "1581",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581"
         }
       ],
       "category": "콘텐츠"
@@ -4943,8 +5157,14 @@
     },
     {
       "name": "원격제어",
-      "description": "비밀번호 등록 후 사용",
+      "description": "내 휴대폰과 타인의 전화에서 통화 관련 부가서비스를 설정해 이용할 수 있는 서비스",
       "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "Z100000001",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100000001"
+        },
         {
           "carrier": "KT",
           "price": 0,
@@ -5281,8 +5501,14 @@
     },
     {
       "name": "국제전화수신차단",
-      "description": "001 등 국제전화국번 기준 차단\nON/OFF 가능",
+      "description": "해외에서 걸려오는 전화를 자동으로 차단해주는 서비스",
       "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "Z100001205",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100001205"
+        },
         {
           "carrier": "KT",
           "price": 0,
@@ -5541,8 +5767,14 @@
     },
     {
       "name": "위치정보자기제어",
-      "description": "",
+      "description": "내 위치 정보를 제공할지 말지 스스로 관리하는 서비스",
       "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "LRZ0001824",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0001824"
+        },
         {
           "carrier": "KT",
           "price": 0,
@@ -5564,645 +5796,6 @@
         }
       ],
       "category": "안심/보안"
-    },
-    {
-      "name": "인포세이프박스",
-      "description": "개인정보가 포함된 메모, 사진 및 영상, 문서 등을 안전하게 보관/관리하고 편하게 이용할 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NC00000220",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000220"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 3300,
-          "prod_id": "LRZ1005512",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ1005512"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "여가생활안심보호",
-      "description": "AI 맞춤형 핫플레이스를 추천받고 주정차 단속알림, 불법카메라탐지까지 가능한 안전하고 효율적인 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 4400,
-          "prod_id": "NC00000202",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000202"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ1002703",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002703"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "공모주정보",
-      "description": "PASS앱 내에서 개인투자자들이 이해하기 쉽게 기업정보 분석을 통한 공모주 투자정보를 제공하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 9900,
-          "prod_id": "NA00008838",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00008838"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ1002699",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002699"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "생활정보",
-      "description": "PASS앱 내에서 공공정보, 생활정보 등의 서비스를 빅데이터 기반으로 맞춤 제공하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3850,
-          "prod_id": "NA00008636",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00008636"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ1002701",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002701"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "더치트 프리미엄",
-      "description": "연락처/계좌번호에 대한 사기피해 여부 조회 및 프리미엄 기능 제공을 통한 금융사기 방지 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NC00000146",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000146"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0003896",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003896"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "유심보호서비스",
-      "description": "유심교체 없이도 내가 사용하는 유심에 안심 기능을 설정하여 무단 기기변경을 차단하고, 해외 로밍을 제한",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00008634",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00008634"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ1002321",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ1002321"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "마인드케어",
-      "description": "자신의 정신 건강을 진단함으로써 심리 안정 솔루션과 전문 심리 상담을 제공하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 2200,
-          "prod_id": "NC00000149",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000149"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0004435",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0004435"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "스마트안티피싱",
-      "description": "서비스 가입자의 휴대폰으로부터 보이스피싱 의심 데이터를 원천적으로 확보하여 피싱 문자, 앱, 사기전화",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1650,
-          "prod_id": "NC00000144",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000144"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1650,
-          "prod_id": "LRZ1000064",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ1000064"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "스마트안심쇼핑",
-      "description": "특허기술을 기반으로 쇼핑, 결제, 택배 관련 사칭 위험문자로부터 피해 예방 및 보상, 쇼핑 혜택 제공",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NA00007600",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007600"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 3300,
-          "prod_id": "LRZ0004076",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0004076"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "부동산지키미",
-      "description": "PASS 앱에서 부동산 관련 금융/신용 정보를 확인할 수 있는 유료 부가서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NA00007266",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007266"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0003837",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003837"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "주식투자노트",
-      "description": "장중 실시간 수익 예상 종목을 문자로 추천해 주는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 11000,
-          "prod_id": "NA00004935",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00004935"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 11000,
-          "prod_id": "LRZ0002692",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0002692"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "휴대폰가족보호",
-      "description": "피보호자의 휴대폰 상태를 통해 위급 상황 및 신체 활동 상태 등을 판단, 보호자에게 알리는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NC00000145",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000145"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 3300,
-          "prod_id": "LRZ0003143",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003143"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "오토콜",
-      "description": "차량에 운전자의 전화번호를 몰라도 차량번호를 입력하면 운전자를 호출할 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 990,
-          "prod_id": "NA00007093",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007093"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 990,
-          "prod_id": "LRZ0004116",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004116"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "아파트청약케어",
-      "description": "청약 필요 정보 모니터링 및 맞춤형 아파트/청약 정보를 제공하는 프롭테크 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NC00000143",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000143"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0003144",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003144"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "오토레터",
-      "description": "자동차를 관리하는 현명한 방법과 자동차 관련 다양한 혜택을 제공받을 수 있는 자동차 특화 부가서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NA00007351",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007351"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 3300,
-          "prod_id": "LRZ0003150",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003150"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "건강지키미",
-      "description": "PASS 앱에서 자신의 보험 및 의료 정보를 확인할 수 있는 유료 부가서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NA00007265",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007265"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0020260",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0020260"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "세이프캐시",
-      "description": "PASS 앱에서 자동이체 내역을 관리하고 간편결제 이상 거래 알림을 받을 수 있는 유료 부가서비스입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NA00007269",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007269"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0003997",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003997"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
-      "name": "휴대폰분실보호",
-      "description": "휴대폰 분실 시 분실폰을 제어, 백업 및 복구, 데이터 초기화를 통한 개인정보보호 및 유출방지서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 2200,
-          "prod_id": "NC00000093",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000093"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 2200,
-          "prod_id": "LRZ0004102",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0004102"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "내정보지키미",
-      "description": "웹사이트를 모니터링하여 개인정보가 노출된 글을 알려주고, 금융거래 차단 및 영업전화 수신거부 등 제공",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NC00000091",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000091"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0001745",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0001745"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "V컬러링",
-      "description": "나를 더 다채롭게 표현하는 새로운 영상 컬러링 서비스, 다양한 장르의 콘텐츠 무제한으로 이용 가능",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 3300,
-          "prod_id": "NA00007017",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007017"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 3300,
-          "prod_id": "LRZ0002150",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-ringtones-callertunes/LRZ0002150"
-        },
-        {
-          "carrier": "KT",
-          "price": 3300,
-          "prod_id": "1423",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1423"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "PASS해외주식정보",
-      "description": "PASS 앱에서 해외 주식 투자 정보를 받아볼 수 있는 유료 부가서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 5500,
-          "prod_id": "NA00006231",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006231"
-        },
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0003953",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003953"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "모션키",
-      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00006435",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0003975",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
-      "name": "스마트안전결제",
-      "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 990,
-          "prod_id": "NA00006378",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006378"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 990,
-          "prod_id": "LRZ0004132",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004132"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "스마트피싱보호",
-      "description": "진화하는 보이스피싱 등 금융사기를 다양한 경고를 통해 피해 예방하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1650,
-          "prod_id": "NC00000068",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000068"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1650,
-          "prod_id": "LRZ0003894",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003894"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "MyOTP",
-      "description": "내 휴대폰에 OTP를 저장 발급하여 인증이 필요할 때 사용하는 가장 안전한 인증 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00004251",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00004251"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0002426",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0002426"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
-      "name": "로그인플러스",
-      "description": "본인이 설정한 서비스암호와 제공되는 연산식을 추가입력 함으로써 인터넷 상의 부정사용 방지서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00003691",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00003691"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0020256",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0020256"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
-      "name": "발신금지",
-      "description": "전화를 걸 수 없고 받을 수만 있어요.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00000302",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00000302"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ0001221",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/LRZ0001221"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "발신번호표시",
-      "description": "걸려 온 전화의 발신 번호를 표시해 줘요.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00000304",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00000304"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ0000382",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/LRZ0000382"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "발신번호표시제한",
-      "description": "전화할 때 내 번호를 알리고 싶지 않다면?",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00000307",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00000307"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "Z100000008",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100000008"
-        },
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "481",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=481"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "번호도용문자차단",
-      "description": "웹에서 발송되는 스팸 스미싱문자에 이동전화번호가 회신번호로 악용되는것을 방지해주는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00004406",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00004406"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ0002297",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/LRZ0002297"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
-      "name": "원키퍼",
-      "description": "민감한 개인정보를 안전하게 보관하여 스마트폰에서 편리하게 보안관리를 할 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00005622",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00005622"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0020258",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0020258"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "전화번호안심로그인",
-      "description": "휴대폰번호와 6자리 USIM인증번호로 로그인할수 있는 간편하고 안전한 로그인 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00004602",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00004602"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0002622",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0002622"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
-      "name": "통화중대기",
-      "description": "통화 중에 걸려 온 다른 전화를 받으실 수 있어요.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00000292",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00000292"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "Z100000006",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100000006"
-        }
-      ],
-      "category": "통화/문자"
     },
     {
       "name": "LTE 데이터쉐어링(LGU+)",
@@ -6239,72 +5832,9 @@
           "price": "유료",
           "prod_id": "LRZ0004181",
           "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ0004181"
-        },
-        {
-          "carrier": "KT",
-          "price": 13900,
-          "prod_id": "1581",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581"
         }
       ],
       "category": "인증/결제"
-    },
-    {
-      "name": "원격제어",
-      "description": "내 휴대폰과 타인의 전화에서 통화 관련 부가서비스를 설정해 이용할 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "Z100000001",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100000001"
-        },
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "433",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=433"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "국제전화수신차단",
-      "description": "해외에서 걸려오는 전화를 자동으로 차단해주는 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "Z100001205",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-call-msg/Z100001205"
-        },
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "971",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=971"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "위치정보자기제어",
-      "description": "내 위치 정보를 제공할지 말지 스스로 관리하는 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ0001824",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0001824"
-        },
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "1209",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1209"
-        }
-      ],
-      "category": "안심/보안"
     },
     {
       "name": "5G 데이터 나눠쓰기",
