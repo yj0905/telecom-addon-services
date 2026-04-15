@@ -132,42 +132,49 @@ MANUAL: dict[str, str] = {
     "아파트청약케어": "혜택/편의",
     "소호지키미": "혜택/편의",
     "갤럭시S22 클럽": "기기케어",
+    "유심보호서비스": "안심/보안",
+    "스마트안티피싱": "안심/보안",
+    "휴대폰분실보호": "안심/보안",
+    "PASS 해외주식정보": "혜택/편의",
+    "원격제어": "안심/보안",
 }
+
+
+def _match(desc: str, name: str) -> str | None:
+    """설명 우선, 이름 보조로 카테고리 매칭. 데이터는 마지막 순위."""
+    # 설명 기준 (구체적인 카테고리 먼저, 데이터는 마지막)
+    if desc:
+        if CARE_KW.search(desc):     return "기기케어"
+        if CALL_KW.search(desc):     return "통화/문자"
+        if AUTH_KW.search(desc):     return "인증/결제"
+        if SECURITY_KW.search(desc): return "안심/보안"
+        if CONTENT_KW.search(desc):  return "콘텐츠"
+        if BENEFIT_KW.search(desc):  return "혜택/편의"
+        if DATA_KW.search(desc):     return "데이터"
+    # 설명으로 분류 안 되면 서비스명 기준
+    if CARE_KW.search(name):     return "기기케어"
+    if CALL_KW.search(name):     return "통화/문자"
+    if AUTH_KW.search(name):     return "인증/결제"
+    if SECURITY_KW.search(name): return "안심/보안"
+    if CONTENT_KW.search(name):  return "콘텐츠"
+    if BENEFIT_KW.search(name):  return "혜택/편의"
+    if DATA_KW.search(name):     return "데이터"
+    return None
 
 
 def classify(name: str, description: str) -> str | None:
     if name in MANUAL:
         return MANUAL[name]
 
-    text = name + " " + description
-
     # PASS 서비스: 이름에 PASS 포함 → 인증/결제 우선 검토 후 키워드로 세분류
     if re.match(r"^pass", name.strip(), re.IGNORECASE):
-        if AUTH_KW.search(text):
-            return "인증/결제"
-        if SECURITY_KW.search(text):
-            return "안심/보안"
-        if CONTENT_KW.search(text):
-            return "콘텐츠"
-        if BENEFIT_KW.search(text):
-            return "혜택/편의"
+        text = name + " " + description
+        if AUTH_KW.search(text):     return "인증/결제"
+        if SECURITY_KW.search(text): return "안심/보안"
+        if CONTENT_KW.search(text):  return "콘텐츠"
+        if BENEFIT_KW.search(text):  return "혜택/편의"
 
-    if DATA_KW.search(text):
-        return "데이터"
-    if CARE_KW.search(text):
-        return "기기케어"
-    if CALL_KW.search(text):
-        return "통화/문자"
-    if CONTENT_KW.search(text):
-        return "콘텐츠"
-    if AUTH_KW.search(text):
-        return "인증/결제"
-    if SECURITY_KW.search(text):
-        return "안심/보안"
-    if BENEFIT_KW.search(text):
-        return "혜택/편의"
-
-    return None
+    return _match(description, name)
 
 
 def main():
