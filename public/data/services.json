@@ -1,48 +1,6 @@
 {
-  "updated_at": "2026-04-16T04:27:31.398294+09:00",
+  "updated_at": "2026-04-17T04:24:08.703617+09:00",
   "services": [
-    {
-      "name": "휴대폰번호보호",
-      "description": "휴대폰 본인인증시 비밀번호 사전설정으로 휴대폰번호 도용방지하는 서비스입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00002666",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00002666"
-        }
-      ],
-      "new_since": "2026-04-16",
-      "category": "인증/결제"
-    },
-    {
-      "name": "유튜브 프리미엄+메가MGC커피",
-      "description": "광고로 끊김 없는 동영상\n오프라인 저장 및 백그라운드 재생\n메가MGC커피 아메리카노(HOT) 매월 최대 3잔 제공",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 8500,
-          "prod_id": "1678",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1678"
-        }
-      ],
-      "new_since": "2026-04-16",
-      "category": "콘텐츠"
-    },
-    {
-      "name": "유튜브 프리미엄 (KT 구독)",
-      "description": "광고 없이 백그라운드 재생\n오프라인 저장\nYouTube Music Premium",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 8000,
-          "prod_id": "1581",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581"
-        }
-      ],
-      "new_since": "2026-04-16",
-      "category": "콘텐츠"
-    },
     {
       "name": "무비와컬처",
       "description": "다양한 장르의 영화를 무제한 스트리밍으로 볼 수 있고 국내 공연 등 문화 정보 제공 서비스",
@@ -4220,6 +4178,20 @@
       "category": "인증/결제"
     },
     {
+      "name": "휴대폰번호보호",
+      "description": "휴대폰 본인인증시 비밀번호 사전설정으로 휴대폰번호 도용방지하는 서비스입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00002666",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00002666"
+        }
+      ],
+      "new_since": "2026-04-16",
+      "category": "인증/결제"
+    },
+    {
       "name": "내 마음대로 2시간 데이터 프리",
       "description": "원하는 시간 선택\n매일 2시간 데이터 무제한",
       "carriers": [
@@ -4439,6 +4411,34 @@
         }
       ],
       "category": "데이터"
+    },
+    {
+      "name": "유튜브 프리미엄+메가MGC커피",
+      "description": "광고로 끊김 없는 동영상\n오프라인 저장 및 백그라운드 재생\n메가MGC커피 아메리카노(HOT) 매월 최대 3잔 제공",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8500,
+          "prod_id": "1678",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1678"
+        }
+      ],
+      "new_since": "2026-04-16",
+      "category": "콘텐츠"
+    },
+    {
+      "name": "유튜브 프리미엄 (KT 구독)",
+      "description": "광고 없이 백그라운드 재생\n오프라인 저장\nYouTube Music Premium",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8000,
+          "prod_id": "1581",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581"
+        }
+      ],
+      "new_since": "2026-04-16",
+      "category": "콘텐츠"
     },
     {
       "name": "디즈니플러스+메가MGC커피",
