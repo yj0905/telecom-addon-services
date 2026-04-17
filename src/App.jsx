@@ -8,6 +8,12 @@ import styles from './App.module.css'
 const CATEGORIES = ['데이터', '통화/문자', '기기케어', '안심/보안', '인증/결제', '혜택/편의', '콘텐츠']
 const CARRIERS = ['SKT', 'KT', 'LGU+']
 const PAGE_SIZE = 24
+const NEW_MS = 30 * 24 * 60 * 60 * 1000
+
+function isNewService(new_since) {
+  if (!new_since) return false
+  return Date.now() - new Date(new_since).getTime() < NEW_MS
+}
 
 function formatUpdatedAt(iso) {
   if (!iso) return ''
@@ -53,7 +59,7 @@ export default function App() {
     if (!data) return []
     const q = query.trim().toLowerCase()
 
-    return data.services.filter(svc => {
+    const result = data.services.filter(svc => {
       // 통신사 필터
       if (selectedCarrier !== '전체') {
         if (!svc.carriers.some(c => c.carrier === selectedCarrier)) return false
@@ -76,6 +82,16 @@ export default function App() {
       }
       return true
     })
+
+    // 신규 서비스(30일 이내)를 항상 앞으로
+    result.sort((a, b) => {
+      const aN = isNewService(a.new_since)
+      const bN = isNewService(b.new_since)
+      if (aN && !bN) return -1
+      if (!aN && bN) return 1
+      return 0
+    })
+    return result
   }, [data, query, selectedCarrier, selectedCategory, selectedPrice])
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
