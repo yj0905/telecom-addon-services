@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-22T04:21:13.979626+09:00",
+  "updated_at": "2026-04-23T04:22:24.568789+09:00",
   "services": [
     {
       "name": "무비와컬처",
@@ -5326,19 +5326,6 @@
           "price": 0,
           "prod_id": "1645",
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1645"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "피싱/해킹 안심서비스",
-      "description": "이용료 걱정 없이, 6개월간 무료 및 자동 해지\n온 가족, 가입고객의 배우자 및 자녀까지\n안심 보장! 최대 300만원까지",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "1666",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1666"
         }
       ],
       "category": "안심/보안"
