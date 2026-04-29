@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-04-29T04:49:18.094401+09:00",
+  "updated_at": "2026-04-30T04:44:27.630794+09:00",
   "services": [
+    {
+      "name": "휴대폰 결제 멤버십 플래티넘",
+      "description": "안전하고 편리한 휴대폰 결제의 혜택, 플래티넘으로 한 단계 높여 보세요.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 9900,
+          "prod_id": "NA00009764",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00009764"
+        }
+      ],
+      "new_since": "2026-04-30",
+      "category": "인증/결제"
+    },
     {
       "name": "무비와컬처",
       "description": "다양한 장르의 영화를 무제한 스트리밍으로 볼 수 있고 국내 공연 등 문화 정보 제공 서비스",
@@ -4175,20 +4189,6 @@
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00004413"
         }
       ],
-      "category": "인증/결제"
-    },
-    {
-      "name": "휴대폰번호보호",
-      "description": "휴대폰 본인인증시 비밀번호 사전설정으로 휴대폰번호 도용방지하는 서비스입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00002666",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00002666"
-        }
-      ],
-      "new_since": "2026-04-16",
       "category": "인증/결제"
     },
     {
