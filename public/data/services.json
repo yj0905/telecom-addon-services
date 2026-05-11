@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-11T04:13:18.453060+09:00",
+  "updated_at": "2026-05-12T04:55:46.923202+09:00",
   "services": [
     {
       "name": "휴대폰 결제 멤버십 플래티넘",
@@ -4631,19 +4631,6 @@
           "price": 2900,
           "prod_id": "1547",
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1547"
-        }
-      ],
-      "category": "콘텐츠"
-    },
-    {
-      "name": "블라이스 셀렉트",
-      "description": "셀렉트 웹소설&웹툰 무제한 감상\n최신 인기 로맨스, 판타지, 무협, 19금 등 다양한 콘텐츠\n매월 엄선된 콘텐츠 업데이트",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 7900,
-          "prod_id": "1586",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1586"
         }
       ],
       "category": "콘텐츠"
