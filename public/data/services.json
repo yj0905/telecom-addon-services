@@ -1,34 +1,6 @@
 {
-  "updated_at": "2026-05-13T05:01:04.902449+09:00",
+  "updated_at": "2026-05-14T05:07:31.969576+09:00",
   "services": [
-    {
-      "name": "LTE 데이터쉐어링",
-      "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 8250,
-          "prod_id": "803",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=803"
-        }
-      ],
-      "new_since": "2026-05-13",
-      "category": "데이터"
-    },
-    {
-      "name": "밀리의서재",
-      "description": "밀리의서재 전자책 월 정기구독\n다양한 도서 콘텐츠 열람 무제한\n오디오북, 챗북 오브제북 등 다양한 북콘텐츠",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 9900,
-          "prod_id": "1585",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585"
-        }
-      ],
-      "new_since": "2026-05-13",
-      "category": "콘텐츠"
-    },
     {
       "name": "휴대폰 결제 멤버십 플래티넘",
       "description": "안전하고 편리한 휴대폰 결제의 혜택, 플래티넘으로 한 단계 높여 보세요.",
@@ -1505,7 +1477,7 @@
     },
     {
       "name": "스마트안티피싱",
-      "description": "서비스 가입자의 휴대폰으로부터 보이스피싱 의심 데이터를 원천적으로 확보하여 피싱 문자, 앱, 사기전화",
+      "description": "피싱, 해킹으로부터 스마트폰을 보호해 주는 서비스",
       "carriers": [
         {
           "carrier": "SKT",
@@ -4259,6 +4231,20 @@
       "category": "혜택/편의"
     },
     {
+      "name": "LTE 데이터쉐어링",
+      "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8250,
+          "prod_id": "803",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=803"
+        }
+      ],
+      "new_since": "2026-05-13",
+      "category": "데이터"
+    },
+    {
       "name": "5G 데이터쉐어링",
       "description": "5G 요금제 전용\n스마트기기로 데이터 공유",
       "carriers": [
@@ -4570,6 +4556,20 @@
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1615"
         }
       ],
+      "category": "콘텐츠"
+    },
+    {
+      "name": "밀리의서재",
+      "description": "밀리의서재 전자책 월 정기구독\n다양한 도서 콘텐츠 열람 무제한\n오디오북, 챗북 오브제북 등 다양한 북콘텐츠",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 9900,
+          "prod_id": "1585",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585"
+        }
+      ],
+      "new_since": "2026-05-13",
       "category": "콘텐츠"
     },
     {
@@ -5068,7 +5068,7 @@
     },
     {
       "name": "원넘버 서비스",
-      "description": "워치에서 휴대폰 번호로 발신/ 휴대폰 전화 수신 시/ 워치에서 동시착신",
+      "description": "워치에서 휴대폰 번호로 발신\n워치에서 휴대폰 전화 동시 착신",
       "carriers": [
         {
           "carrier": "KT",
