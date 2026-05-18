@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-05-18T04:16:49.133177+09:00",
+  "updated_at": "2026-05-19T04:51:15.458699+09:00",
   "services": [
+    {
+      "name": "휴대폰번호보호",
+      "description": "휴대폰 본인인증시 비밀번호 사전설정으로 휴대폰번호 도용방지하는 서비스입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00002666",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00002666"
+        }
+      ],
+      "new_since": "2026-05-19",
+      "category": "인증/결제"
+    },
     {
       "name": "휴대폰 결제 멤버십 플래티넘",
       "description": "안전하고 편리한 휴대폰 결제의 혜택, 플래티넘으로 한 단계 높여 보세요.",
@@ -742,19 +756,6 @@
         }
       ],
       "category": "안심/보안"
-    },
-    {
-      "name": "휴대폰 결제 멤버십 프리미엄",
-      "description": "안전하고 편리한 휴대폰 결제를 이용하고, 더 큰 할인 혜택도 받아 보세요.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 4900,
-          "prod_id": "NA00009010",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00009010"
-        }
-      ],
-      "category": "인증/결제"
     },
     {
       "name": "공모주정보",
