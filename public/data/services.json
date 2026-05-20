@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-05-20T04:58:00.189837+09:00",
+  "updated_at": "2026-05-21T05:24:43.155756+09:00",
   "services": [
+    {
+      "name": "휴대폰 인증보호",
+      "description": "휴대폰 본인확인 및 휴대폰 결제 서비스를 스마트폰App을 통하여 보다 안전하게 이용할 수 있는 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00004203",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00004203"
+        }
+      ],
+      "new_since": "2026-05-21",
+      "category": "인증/결제"
+    },
     {
       "name": "휴대폰 결제 멤버십 플래티넘",
       "description": "안전하고 편리한 휴대폰 결제의 혜택, 플래티넘으로 한 단계 높여 보세요.",
@@ -1771,19 +1785,6 @@
       "category": "기기케어"
     },
     {
-      "name": "5GX클럽 아이폰13",
-      "description": "19개월 후 단말기 가격의 최대 50% 보상받고 새로운 스마트폰으로 교체가능한 5GX클럽",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 5900,
-          "prod_id": "NA00007580",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007580"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
       "name": "0히어로속도제어해제",
       "description": "0히어로 할인제도의 데이터혜택 관련 옵션 상품 입니다",
       "carriers": [
@@ -2437,25 +2438,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "스마트안전결제",
-      "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 990,
-          "prod_id": "NA00006378",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006378"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 990,
-          "prod_id": "LRZ0004132",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004132"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
       "name": "모션키",
       "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
       "carriers": [
@@ -2473,6 +2455,25 @@
         }
       ],
       "category": "인증/결제"
+    },
+    {
+      "name": "스마트안전결제",
+      "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 990,
+          "prod_id": "NA00006378",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006378"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 990,
+          "prod_id": "LRZ0004132",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004132"
+        }
+      ],
+      "category": "통화/문자"
     },
     {
       "name": "스마트피싱보호",
