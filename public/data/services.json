@@ -1,20 +1,6 @@
 {
-  "updated_at": "2026-05-22T05:00:30.573070+09:00",
+  "updated_at": "2026-05-23T04:55:28.029254+09:00",
   "services": [
-    {
-      "name": "분실파손 iOS 맥스",
-      "description": "분실파손에 대비할 수 있는 보험 연계 서비스 입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 9000,
-          "prod_id": "NA00006235",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006235"
-        }
-      ],
-      "new_since": "2026-05-22",
-      "category": "기기케어"
-    },
     {
       "name": "휴대폰 결제 멤버십 플래티넘",
       "description": "안전하고 편리한 휴대폰 결제의 혜택, 플래티넘으로 한 단계 높여 보세요.",
@@ -4205,6 +4191,20 @@
         }
       ],
       "category": "안심/보안"
+    },
+    {
+      "name": "분실파손 iOS 맥스",
+      "description": "분실파손에 대비할 수 있는 보험 연계 서비스 입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 9000,
+          "prod_id": "NA00006235",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006235"
+        }
+      ],
+      "new_since": "2026-05-22",
+      "category": "기기케어"
     },
     {
       "name": "내 마음대로 2시간 데이터 프리",
