@@ -43,12 +43,13 @@ def parse_price(text: str):
 
 
 def get_last_page(pw_page: Page) -> int:
-    """맨 끝페이지 버튼의 data-page 속성으로 마지막 페이지 번호 확인"""
+    """맨 끝페이지 버튼의 data-page 속성으로 마지막 페이지 번호 확인.
+    data-page는 0-indexed이므로 +1해서 반환."""
     el = pw_page.query_selector("a.btn.end[data-page]")
     if el:
         val = el.get_attribute("data-page")
         if val and val.isdigit():
-            return int(val)
+            return int(val) + 1
     # 버튼이 없으면 현재 페이지가 마지막
     return 1
 
@@ -101,7 +102,7 @@ def crawl(pw_page: Page) -> list[dict]:
     pw_page.wait_for_selector("a[data-prod-id]", timeout=20_000)
 
     last_page = get_last_page(pw_page)
-    print(f"[SKT] 총 {last_page}페이지 (버튼 기준)")
+    print(f"[SKT] 총 {last_page}페이지")
 
     items = collect_page(pw_page)
     results.extend(items)
@@ -114,21 +115,6 @@ def crawl(pw_page: Page) -> list[dict]:
         items = collect_page(pw_page)
         results.extend(items)
         print(f"[SKT] 페이지 {page_no}: {len(items)}개 (누적: {len(results)}개)")
-
-    # 페이지네이션 버튼 이후에도 항목이 있을 수 있으므로 빈 페이지 나올 때까지 계속 확인
-    page_no = last_page + 1
-    while True:
-        pw_page.goto(page_url(page_no), wait_until="load", timeout=60_000)
-        try:
-            pw_page.wait_for_selector("a[data-prod-id]", timeout=5_000)
-        except Exception:
-            break
-        items = collect_page(pw_page)
-        if not items:
-            break
-        results.extend(items)
-        print(f"[SKT] 페이지 {page_no}: {len(items)}개 (누적: {len(results)}개)")
-        page_no += 1
 
     print(f"[SKT] 완료: {len(results)}개")
     return results
