@@ -1,73 +1,8 @@
 {
-  "updated_at": "2026-05-26T15:38:43.088239+09:00",
+  "updated_at": "2026-05-27T05:15:55.088812+09:00",
   "services": [
     {
-      "name": "T All케어 iOS 맥스",
-      "description": "분실, 파손 등 단말기 사용 시 발생할 수 있는사고에 대비할 수 있는 보험 연계 서비스 입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 10100,
-          "prod_id": "NA00006236",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006236"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
-      "name": "T 렌탈보험 i 맥스",
-      "description": "랜탈 고객 대상 단말 분실 파손 보험입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 9000,
-          "prod_id": "NA00006237",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006237"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
-      "name": "R All케어 i 맥스",
-      "description": "랜탈 고객 전용 단말 분실 파손 보험 상품입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 10100,
-          "prod_id": "NA00006238",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006238"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
-      "name": "T가족모아데이터",
-      "description": "T플랜 가입하고 가족끼리 결합하면 DATA 공유에 추가 혜택까지!",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": "유료",
-          "prod_id": "NA00006031",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006031"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "0플랜 수능_프로모션",
-      "description": "2018년 0플랜 수능 프로모션",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00006280",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006280"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "LTE 데이터쉐어링(KT)",
+      "name": "LTE 데이터쉐어링",
       "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
       "carriers": [
         {
@@ -77,25 +12,11 @@
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=803"
         }
       ],
-      "new_since": "2026-05-26",
+      "new_since": "2026-05-27",
       "category": "데이터"
     },
     {
-      "name": "티빙 생활구독팩",
-      "description": "티빙의 차별화된 오리지널 콘텐츠\ntvN, JTBC, Mnet 등 실시간 채널과 최신 인기 프로그램\n매월 생활혜택 ​ 5종 중 원하는 ​ 혜택 1개 선택 (최대 8,900원 상당)​",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 9500,
-          "prod_id": "1669",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1669"
-        }
-      ],
-      "new_since": "2026-05-26",
-      "category": "콘텐츠"
-    },
-    {
-      "name": "밀리의서재(KT)",
+      "name": "밀리의서재",
       "description": "밀리의서재 전자책 월 정기구독\n다양한 도서 콘텐츠 열람 무제한\n오디오북, 챗북 오브제북 등 다양한 북콘텐츠",
       "carriers": [
         {
@@ -105,22 +26,8 @@
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585"
         }
       ],
-      "new_since": "2026-05-26",
+      "new_since": "2026-05-27",
       "category": "콘텐츠"
-    },
-    {
-      "name": "국내스탁",
-      "description": "로보어드바이저가 분석한 주식 포트폴리오부터 일간추천종목, 증시동향,IPO 리포트를 한 번에 제공받는 종합 주식정보 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0020259",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0020259"
-        }
-      ],
-      "new_since": "2026-05-26",
-      "category": "혜택/편의"
     },
     {
       "name": "휴대폰 결제 멤버십 플래티넘",
@@ -4326,6 +4233,71 @@
       "category": "기기케어"
     },
     {
+      "name": "T All케어 iOS 맥스",
+      "description": "분실, 파손 등 단말기 사용 시 발생할 수 있는사고에 대비할 수 있는 보험 연계 서비스 입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 10100,
+          "prod_id": "NA00006236",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006236"
+        }
+      ],
+      "category": "기기케어"
+    },
+    {
+      "name": "T 렌탈보험 i 맥스",
+      "description": "랜탈 고객 대상 단말 분실 파손 보험입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 9000,
+          "prod_id": "NA00006237",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006237"
+        }
+      ],
+      "category": "기기케어"
+    },
+    {
+      "name": "R All케어 i 맥스",
+      "description": "랜탈 고객 전용 단말 분실 파손 보험 상품입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 10100,
+          "prod_id": "NA00006238",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006238"
+        }
+      ],
+      "category": "기기케어"
+    },
+    {
+      "name": "T가족모아데이터",
+      "description": "T플랜 가입하고 가족끼리 결합하면 DATA 공유에 추가 혜택까지!",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": "유료",
+          "prod_id": "NA00006031",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006031"
+        }
+      ],
+      "category": "혜택/편의"
+    },
+    {
+      "name": "0플랜 수능_프로모션",
+      "description": "2018년 0플랜 수능 프로모션",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 0,
+          "prod_id": "NA00006280",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006280"
+        }
+      ],
+      "category": "혜택/편의"
+    },
+    {
       "name": "내 마음대로 2시간 데이터 프리",
       "description": "원하는 시간 선택\n매일 2시간 데이터 무제한",
       "carriers": [
@@ -4363,19 +4335,6 @@
         }
       ],
       "category": "혜택/편의"
-    },
-    {
-      "name": "LTE 데이터쉐어링(LGU+)",
-      "description": "LTE 휴대폰 요금제 기본 제공 데이터를 태블릿 또는 스마트기기와 나눠 쓸 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 7700,
-          "prod_id": "LRZ0001821",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-data/LRZ0001821"
-        }
-      ],
-      "category": "데이터"
     },
     {
       "name": "5G 데이터쉐어링",
@@ -4547,6 +4506,20 @@
       "category": "데이터"
     },
     {
+      "name": "티빙 생활구독팩",
+      "description": "티빙의 차별화된 오리지널 콘텐츠\ntvN, JTBC, Mnet 등 실시간 채널과 최신 인기 프로그램\n매월 생활혜택 ​ 5종 중 원하는 ​ 혜택 1개 선택 (최대 8,900원 상당)​",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 9500,
+          "prod_id": "1669",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1669"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "콘텐츠"
+    },
+    {
       "name": "유튜브 프리미엄+메가MGC커피",
       "description": "광고로 끊김 없는 동영상\n오프라인 저장 및 백그라운드 재생\n메가MGC커피 아메리카노(HOT) 매월 최대 3잔 제공",
       "carriers": [
@@ -4687,19 +4660,6 @@
           "price": 4000,
           "prod_id": "1615",
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1615"
-        }
-      ],
-      "category": "콘텐츠"
-    },
-    {
-      "name": "밀리의서재(LGU+)",
-      "description": "10만권 이상의 전자책을 무제한으로 즐길 수 있는 국내 최대 독서 플랫폼 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ0004257",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ0004257"
         }
       ],
       "category": "콘텐츠"
@@ -5885,6 +5845,46 @@
         }
       ],
       "category": "안심/보안"
+    },
+    {
+      "name": "국내스탁",
+      "description": "로보어드바이저가 분석한 주식 포트폴리오부터 일간추천종목, 증시동향,IPO 리포트를 한 번에 제공받는 종합 주식정보 서비스",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0020259",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0020259"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "LTE 데이터쉐어링(LGU+)",
+      "description": "LTE 휴대폰 요금제 기본 제공 데이터를 태블릿 또는 스마트기기와 나눠 쓸 수 있는 서비스",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 7700,
+          "prod_id": "LRZ0001821",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-data/LRZ0001821"
+        }
+      ],
+      "category": "데이터"
+    },
+    {
+      "name": "밀리의서재(LGU+)",
+      "description": "10만권 이상의 전자책을 무제한으로 즐길 수 있는 국내 최대 독서 플랫폼 서비스",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "LRZ0004257",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ0004257"
+        }
+      ],
+      "category": "콘텐츠"
     },
     {
       "name": "5G 데이터 나눠쓰기",
