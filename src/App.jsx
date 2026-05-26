@@ -54,6 +54,9 @@ export default function App() {
   function changeCategory(v) { setSelectedCategory(v); setPage(1) }
   function changePrice(v) { setSelectedPrice(v); setPage(1) }
   function changeQuery(v) { setQuery(v); setPage(1) }
+  function resetAll() {
+    setQuery(''); setSelectedCarrier('전체'); setSelectedCategory('전체'); setSelectedPrice('전체'); setPage(1)
+  }
 
   const filtered = useMemo(() => {
     if (!data) return []
@@ -102,7 +105,7 @@ export default function App() {
     <div className={styles.app}>
       <header className={styles.header}>
         <div className={styles.headerInner}>
-          <h1 className={styles.title}>통신 3사 부가서비스 검색</h1>
+          <h1 className={styles.title} onClick={resetAll} style={{cursor:'pointer'}}>통신 3사 부가서비스 검색</h1>
           <p className={styles.subtitle}>SKT · KT · LGU+ 부가서비스를 한눈에 비교하세요</p>
         </div>
       </header>
