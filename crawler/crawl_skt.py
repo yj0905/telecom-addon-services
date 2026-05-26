@@ -101,7 +101,7 @@ def crawl(pw_page: Page) -> list[dict]:
     pw_page.wait_for_selector("a[data-prod-id]", timeout=20_000)
 
     last_page = get_last_page(pw_page)
-    print(f"[SKT] 총 {last_page}페이지")
+    print(f"[SKT] 총 {last_page}페이지 (버튼 기준)")
 
     items = collect_page(pw_page)
     results.extend(items)
@@ -114,6 +114,21 @@ def crawl(pw_page: Page) -> list[dict]:
         items = collect_page(pw_page)
         results.extend(items)
         print(f"[SKT] 페이지 {page_no}: {len(items)}개 (누적: {len(results)}개)")
+
+    # 페이지네이션 버튼 이후에도 항목이 있을 수 있으므로 빈 페이지 나올 때까지 계속 확인
+    page_no = last_page + 1
+    while True:
+        pw_page.goto(page_url(page_no), wait_until="load", timeout=60_000)
+        try:
+            pw_page.wait_for_selector("a[data-prod-id]", timeout=5_000)
+        except Exception:
+            break
+        items = collect_page(pw_page)
+        if not items:
+            break
+        results.extend(items)
+        print(f"[SKT] 페이지 {page_no}: {len(items)}개 (누적: {len(results)}개)")
+        page_no += 1
 
     print(f"[SKT] 완료: {len(results)}개")
     return results
