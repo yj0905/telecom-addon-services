@@ -1,6 +1,132 @@
 {
-  "updated_at": "2026-05-26T04:48:51.009052+09:00",
+  "updated_at": "2026-05-26T15:38:43.088239+09:00",
   "services": [
+    {
+      "name": "T All케어 iOS 맥스",
+      "description": "분실, 파손 등 단말기 사용 시 발생할 수 있는사고에 대비할 수 있는 보험 연계 서비스 입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 10100,
+          "prod_id": "NA00006236",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006236"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "기기케어"
+    },
+    {
+      "name": "T 렌탈보험 i 맥스",
+      "description": "랜탈 고객 대상 단말 분실 파손 보험입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 9000,
+          "prod_id": "NA00006237",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006237"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "기기케어"
+    },
+    {
+      "name": "R All케어 i 맥스",
+      "description": "랜탈 고객 전용 단말 분실 파손 보험 상품입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 10100,
+          "prod_id": "NA00006238",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006238"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "기기케어"
+    },
+    {
+      "name": "T가족모아데이터",
+      "description": "T플랜 가입하고 가족끼리 결합하면 DATA 공유에 추가 혜택까지!",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": "유료",
+          "prod_id": "NA00006031",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006031"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "0플랜 수능_프로모션",
+      "description": "2018년 0플랜 수능 프로모션",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 0,
+          "prod_id": "NA00006280",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006280"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "LTE 데이터쉐어링(KT)",
+      "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 8250,
+          "prod_id": "803",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=803"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "데이터"
+    },
+    {
+      "name": "티빙 생활구독팩",
+      "description": "티빙의 차별화된 오리지널 콘텐츠\ntvN, JTBC, Mnet 등 실시간 채널과 최신 인기 프로그램\n매월 생활혜택 ​ 5종 중 원하는 ​ 혜택 1개 선택 (최대 8,900원 상당)​",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 9500,
+          "prod_id": "1669",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1669"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "콘텐츠"
+    },
+    {
+      "name": "밀리의서재(KT)",
+      "description": "밀리의서재 전자책 월 정기구독\n다양한 도서 콘텐츠 열람 무제한\n오디오북, 챗북 오브제북 등 다양한 북콘텐츠",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 9900,
+          "prod_id": "1585",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": "콘텐츠"
+    },
+    {
+      "name": "국내스탁",
+      "description": "로보어드바이저가 분석한 주식 포트폴리오부터 일간추천종목, 증시동향,IPO 리포트를 한 번에 제공받는 종합 주식정보 서비스",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ0020259",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0020259"
+        }
+      ],
+      "new_since": "2026-05-26",
+      "category": null
+    },
     {
       "name": "휴대폰 결제 멤버십 플래티넘",
       "description": "안전하고 편리한 휴대폰 결제의 혜택, 플래티넘으로 한 단계 높여 보세요.",
@@ -2171,7 +2297,7 @@
       "category": "데이터"
     },
     {
-      "name": "PASS해외주식정보",
+      "name": "해외주식정보",
       "description": "PASS 앱에서 해외 주식 투자 정보를 받아볼 수 있는 유료 부가서비스",
       "carriers": [
         {
@@ -2187,7 +2313,7 @@
           "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0003953"
         }
       ],
-      "category": "혜택/편의"
+      "category": null
     },
     {
       "name": "T&캡스",
@@ -4244,17 +4370,16 @@
       "category": "혜택/편의"
     },
     {
-      "name": "LTE 데이터쉐어링",
-      "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
+      "name": "LTE 데이터쉐어링(LGU+)",
+      "description": "LTE 휴대폰 요금제 기본 제공 데이터를 태블릿 또는 스마트기기와 나눠 쓸 수 있는 서비스",
       "carriers": [
         {
-          "carrier": "KT",
-          "price": 8250,
-          "prod_id": "803",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=803"
+          "carrier": "LGU+",
+          "price": 7700,
+          "prod_id": "LRZ0001821",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-data/LRZ0001821"
         }
       ],
-      "new_since": "2026-05-13",
       "category": "데이터"
     },
     {
@@ -4572,17 +4697,16 @@
       "category": "콘텐츠"
     },
     {
-      "name": "밀리의서재",
-      "description": "밀리의서재 전자책 월 정기구독\n다양한 도서 콘텐츠 열람 무제한\n오디오북, 챗북 오브제북 등 다양한 북콘텐츠",
+      "name": "밀리의서재(LGU+)",
+      "description": "10만권 이상의 전자책을 무제한으로 즐길 수 있는 국내 최대 독서 플랫폼 서비스",
       "carriers": [
         {
-          "carrier": "KT",
-          "price": 9900,
-          "prod_id": "1585",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585"
+          "carrier": "LGU+",
+          "price": 0,
+          "prod_id": "LRZ0004257",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ0004257"
         }
       ],
-      "new_since": "2026-05-13",
       "category": "콘텐츠"
     },
     {
@@ -5768,60 +5892,6 @@
       "category": "안심/보안"
     },
     {
-      "name": "PASS마인드케어 프리미엄",
-      "description": "내 마음을 회복하고 관리할 수 있는 마음 돌봄 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 11000,
-          "prod_id": "LRZ1005508",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1005508"
-        }
-      ],
-      "new_since": "2026-05-12",
-      "category": "혜택/편의"
-    },
-    {
-      "name": "PASS에코혜택모아",
-      "description": "친환경 활동으로 받는 다양한 혜택과 탄소중립포인트를 한곳에서 간편하게 관리할 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 3300,
-          "prod_id": "LRZ1005495",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1005495"
-        }
-      ],
-      "new_since": "2026-05-12",
-      "category": "혜택/편의"
-    },
-    {
-      "name": "LTE 데이터쉐어링(LGU+)",
-      "description": "LTE 휴대폰 요금제 기본 제공 데이터를 태블릿 또는 스마트기기와 나눠 쓸 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 7700,
-          "prod_id": "LRZ0001821",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-data/LRZ0001821"
-        }
-      ],
-      "category": "데이터"
-    },
-    {
-      "name": "밀리의서재(LGU+)",
-      "description": "10만권 이상의 전자책을 무제한으로 즐길 수 있는 국내 최대 독서 플랫폼 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ0004257",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ0004257"
-        }
-      ],
-      "category": "콘텐츠"
-    },
-    {
       "name": "5G 데이터 나눠쓰기",
       "description": "5G 휴대폰 요금제 기본 제공 데이터를 태블릿 또는 스마트기기와 나눠 쓸 수 있는 서비스",
       "carriers": [
@@ -6121,19 +6191,6 @@
       "category": "콘텐츠"
     },
     {
-      "name": "티빙 프리미엄",
-      "description": "티빙 오리지널 콘텐츠와 tvN, JTBC, Mnet 등의 최신 방송 프로그램, 스포츠, Apple TV+ 콘텐츠, 공연, 중계, 애니메이션 등\n다채로운 콘텐츠를 빠르고 편리하게 즐길 수 있는 OTT 서비스.\n티빙과 함께 재미를 무제한 스트리밍하세요!",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 17000,
-          "prod_id": "LRZ1000441",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ1000441"
-        }
-      ],
-      "category": "콘텐츠"
-    },
-    {
       "name": "유튜브 프리미엄",
       "description": "U⁺통신료와 한번에 결제하고 더욱 편리하게 이용할 수 있는 유튜브 프리미엄 서비스",
       "carriers": [
@@ -6155,6 +6212,19 @@
           "price": 13500,
           "prod_id": "LRZ1000440",
           "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ1000440"
+        }
+      ],
+      "category": "콘텐츠"
+    },
+    {
+      "name": "티빙 프리미엄",
+      "description": "티빙 오리지널 콘텐츠와 tvN, JTBC, Mnet 등의 최신 방송 프로그램, 스포츠, Apple TV+ 콘텐츠, 공연, 중계, 애니메이션 등\n다채로운 콘텐츠를 빠르고 편리하게 즐길 수 있는 OTT 서비스.\n티빙과 함께 재미를 무제한 스트리밍하세요!",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 17000,
+          "prod_id": "LRZ1000441",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-digitalcontent/LRZ1000441"
         }
       ],
       "category": "콘텐츠"
@@ -6992,19 +7062,6 @@
       "category": "통화/문자"
     },
     {
-      "name": "V컬러링 프로필",
-      "description": "내가 전화하는 상대방에게, 내가 설정한 영상을 보여주는 영상 통화연결음 서비스\nAPP 또는 별도 페이지에서 이용 가능한 서비스입니다.",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": 0,
-          "prod_id": "LRZ1005368",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-ringtones-callertunes/LRZ1005368"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
       "name": "벨링모아A(벨소리,통화연결음,MP3)",
       "description": "통화연결음/벨소리 2건과 MP3 1건을 매월 교체할 수 있는 패키지",
       "carriers": [
@@ -7447,6 +7504,34 @@
       "category": "안심/보안"
     },
     {
+      "name": "PASS마인드케어 프리미엄",
+      "description": "내 마음을 회복하고 관리할 수 있는 마음 돌봄 서비스",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 11000,
+          "prod_id": "LRZ1005508",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1005508"
+        }
+      ],
+      "new_since": "2026-05-12",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "PASS에코혜택모아",
+      "description": "친환경 활동으로 받는 다양한 혜택과 탄소중립포인트를 한곳에서 간편하게 관리할 수 있는 서비스",
+      "carriers": [
+        {
+          "carrier": "LGU+",
+          "price": 3300,
+          "prod_id": "LRZ1005495",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1005495"
+        }
+      ],
+      "new_since": "2026-05-12",
+      "category": "혜택/편의"
+    },
+    {
       "name": "PASS펫키퍼",
       "description": "반려동물의 건강과 안전을 책임지는 종합 케어 서비스",
       "carriers": [
@@ -7624,19 +7709,6 @@
           "price": "유료/무료",
           "prod_id": "LRZ0002938",
           "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0002938"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "PASS스탁",
-      "description": "로보어드바이저가 분석한 주식 포트폴리오부터 일간추천종목, 증시동향, 수급주체정보, IPO 리포트를 한 번에 제공받는 종합 주식정보 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ0020259",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ0020259"
         }
       ],
       "category": "혜택/편의"
