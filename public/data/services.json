@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29T04:37:47.699610+09:00",
+  "updated_at": "2026-06-30T05:06:15.084726+09:00",
   "services": [
     {
       "name": "음성통화차단해제",
@@ -2452,25 +2452,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "모션키",
-      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00006435",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0003975",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
       "name": "스마트안전결제",
       "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
       "carriers": [
@@ -2488,6 +2469,25 @@
         }
       ],
       "category": "통화/문자"
+    },
+    {
+      "name": "모션키",
+      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00006435",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0003975",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
+        }
+      ],
+      "category": "인증/결제"
     },
     {
       "name": "스마트피싱보호",
@@ -3423,19 +3423,6 @@
         }
       ],
       "category": "안심/보안"
-    },
-    {
-      "name": "T 청소년안심팩",
-      "description": "무분별한 스마트폰 사용제어, 유해매체 차단, 학교폭력 의심문자 알림, 위치조회 등 청소년을 위한 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00003835",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00003835"
-        }
-      ],
-      "category": "통화/문자"
     },
     {
       "name": "개별통화수신거부",
