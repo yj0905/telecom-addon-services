@@ -1,6 +1,48 @@
 {
-  "updated_at": "2026-06-30T05:06:15.084726+09:00",
+  "updated_at": "2026-07-01T05:05:00.001944+09:00",
   "services": [
+    {
+      "name": "군인 속도제어해제",
+      "description": "0히어로 할인제도의 데이터혜택 관련 옵션 상품 입니다",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 0,
+          "prod_id": "NA00007540",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007540"
+        }
+      ],
+      "new_since": "2026-07-01",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "데이터충전",
+      "description": "멤버십 80% 할인\n스마트기기 / 테더링 사용 가능",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 1000,
+          "prod_id": "1287",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1287"
+        }
+      ],
+      "new_since": "2026-07-01",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "데이터쉐어링",
+      "description": "스마트기기로 데이터 공유",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 5000,
+          "prod_id": "1325",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1325"
+        }
+      ],
+      "new_since": "2026-07-01",
+      "category": "데이터"
+    },
     {
       "name": "음성통화차단해제",
       "description": "Easy 요금제의 옵션 상품으로, 가입하시면 기본 제공 통화를 다 써도 통화 발신이 가능합니다.",
@@ -1797,19 +1839,6 @@
         }
       ],
       "category": "기기케어"
-    },
-    {
-      "name": "0히어로속도제어해제",
-      "description": "0히어로 할인제도의 데이터혜택 관련 옵션 상품 입니다",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 0,
-          "prod_id": "NA00007540",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007540"
-        }
-      ],
-      "category": "혜택/편의"
     },
     {
       "name": "보이스뷰",
@@ -4311,19 +4340,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "5G 데이터충전",
-      "description": "5G 요금제 전용\n멤버십 80% 할인\n스마트기기 / 테더링 사용 가능",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 1000,
-          "prod_id": "1287",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1287"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
       "name": "LTE 데이터쉐어링",
       "description": "LTE 요금제 전용\n2대까지 무료 제공\n최대 9대까지 데이터 공유",
       "carriers": [
@@ -4335,19 +4351,6 @@
         }
       ],
       "new_since": "2026-05-27",
-      "category": "데이터"
-    },
-    {
-      "name": "5G 데이터쉐어링",
-      "description": "5G 요금제 전용\n스마트기기로 데이터 공유",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 5000,
-          "prod_id": "1325",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1325"
-        }
-      ],
       "category": "데이터"
     },
     {
@@ -5678,19 +5681,6 @@
         }
       ],
       "category": "기기케어"
-    },
-    {
-      "name": "KT 휴대폰결제 플러스",
-      "description": "앱스토어 결제 혜택\n기본 5%+ 추가 할인",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 3900,
-          "prod_id": "1646",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1646"
-        }
-      ],
-      "category": "인증/결제"
     },
     {
       "name": "휴대폰 결제",
