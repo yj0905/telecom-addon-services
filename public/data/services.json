@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-07-02T05:02:41.666060+09:00",
+  "updated_at": "2026-07-03T04:39:34.729274+09:00",
   "services": [
     {
       "name": "라이트 59 데이터 충전 13GB",
-      "description": "이번 달 데이터가 부족할 때, 데이터 충전",
+      "description": "필요한 만큼 데이터를 충전할 수 있는 맞춤형 옵션",
       "carriers": [
         {
           "carrier": "SKT",
@@ -17,7 +17,7 @@
     },
     {
       "name": "라이트 59 데이터 충전 30GB",
-      "description": "이번 달 데이터가 부족할 때, 데이터 충전",
+      "description": "필요한 만큼 데이터를 충전할 수 있는 맞춤형 옵션",
       "carriers": [
         {
           "carrier": "SKT",
@@ -31,7 +31,7 @@
     },
     {
       "name": "라이트 59 데이터 충전 50GB",
-      "description": "이번 달 데이터가 부족할 때, 데이터 충전",
+      "description": "필요한 만큼 데이터를 충전할 수 있는 맞춤형 옵션",
       "carriers": [
         {
           "carrier": "SKT",
@@ -45,7 +45,7 @@
     },
     {
       "name": "라이트 59 데이터 충전 75GB",
-      "description": "이번 달 데이터가 부족할 때, 데이터 충전",
+      "description": "필요한 만큼 데이터를 충전할 수 있는 맞춤형 옵션",
       "carriers": [
         {
           "carrier": "SKT",
@@ -126,20 +126,6 @@
       ],
       "new_since": "2026-07-02",
       "category": "안심/보안"
-    },
-    {
-      "name": "스마트기기 이용요금 할인(모)",
-      "description": "스마트워치/태블릿/ZEM플랜워치/5G함께쓰기 이용료 혜택 제공(혜택을 제공하는 5G 요금제 가입 고객 대상)",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": "유료",
-          "prod_id": "NA00006484",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006484"
-        }
-      ],
-      "new_since": "2026-07-02",
-      "category": "혜택/편의"
     },
     {
       "name": "음성통화차단해제",
@@ -2986,6 +2972,20 @@
         }
       ],
       "category": "통화/문자"
+    },
+    {
+      "name": "스마트기기 이용요금 할인(모)",
+      "description": "스마트워치/태블릿/ZEM플랜워치/5G함께쓰기 이용료 혜택 제공(혜택을 제공하는 5G 요금제 가입 고객 대상)",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": "유료",
+          "prod_id": "NA00006484",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006484"
+        }
+      ],
+      "new_since": "2026-07-02",
+      "category": "혜택/편의"
     },
     {
       "name": "VIP스마트워치할인_모",
