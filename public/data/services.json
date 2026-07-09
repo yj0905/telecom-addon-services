@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T04:41:05.893302+09:00",
+  "updated_at": "2026-07-10T04:53:22.425625+09:00",
   "services": [
     {
       "name": "라이트 59 데이터 충전 13GB",
@@ -4572,19 +4572,6 @@
       "category": "데이터"
     },
     {
-      "name": "데이터 전용 단말 통보 서비스",
-      "description": "순 데이터/ 스마트액션 요금제 전용\n기본료 초과 시 알림",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "536",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=536"
-        }
-      ],
-      "category": "데이터"
-    },
-    {
       "name": "Style안심데이터",
       "description": "Style 요금제 전용\n데이터 소진 시 안심차단",
       "carriers": [
@@ -4596,6 +4583,19 @@
         }
       ],
       "category": "안심/보안"
+    },
+    {
+      "name": "데이터 전용 단말 통보 서비스",
+      "description": "순 데이터/ 스마트액션 요금제 전용\n기본료 초과 시 알림",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 0,
+          "prod_id": "536",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=536"
+        }
+      ],
+      "category": "데이터"
     },
     {
       "name": "3G 데이터쉐어링",
