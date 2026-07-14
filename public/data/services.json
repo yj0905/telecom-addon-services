@@ -1,6 +1,45 @@
 {
-  "updated_at": "2026-07-14T04:35:39.352519+09:00",
+  "updated_at": "2026-07-15T04:26:32.988129+09:00",
   "services": [
+    {
+      "name": "V프로필",
+      "description": "전화 걸 때 나를 표현하는 프로필 영상을 보여주는 새로운 V 프로필 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 3300,
+          "prod_id": "NA00009321",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00009321"
+        },
+        {
+          "carrier": "KT",
+          "price": 3300,
+          "prod_id": "1658",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1658"
+        }
+      ],
+      "new_since": "2026-07-15",
+      "category": null
+    },
+    {
+      "name": "오피스도우미",
+      "description": "PASS 앱에서 모바일 문서 뷰어 및 편집 기능 등을 제공하는 부가서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 5500,
+          "prod_id": "NA00009744",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00009744"
+        },
+        {
+          "carrier": "LGU+",
+          "price": "유료/무료",
+          "prod_id": "LRZ1002705",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002705"
+        }
+      ],
+      "category": "혜택/편의"
+    },
     {
       "name": "라이트 59 데이터 충전 13GB",
       "description": "필요한 만큼 데이터를 충전할 수 있는 맞춤형 옵션",
@@ -7667,19 +7706,6 @@
           "price": "유료/무료",
           "prod_id": "LRZ1004440",
           "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1004440"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "PASS오피스도우미",
-      "description": "다양한 종류의 문서를 뷰어 없이도 U+PASS앱에서 확인하고 쉽게 공유할 수 있는 서비스",
-      "carriers": [
-        {
-          "carrier": "LGU+",
-          "price": "유료/무료",
-          "prod_id": "LRZ1002705",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-pass/LRZ1002705"
         }
       ],
       "category": "혜택/편의"
