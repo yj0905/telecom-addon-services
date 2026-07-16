@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T04:19:05.404596+09:00",
+  "updated_at": "2026-07-17T04:20:11.557107+09:00",
   "services": [
     {
       "name": "V프로필",
@@ -5935,19 +5935,6 @@
           "price": 4950,
           "prod_id": "1661",
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1661"
-        }
-      ],
-      "category": "혜택/편의"
-    },
-    {
-      "name": "Y군인 혜택",
-      "description": "모바일 월정액 20% 할인\n데이터 추가 제공 (5G 일부 요금제 한정)",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "1476",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1476"
         }
       ],
       "category": "혜택/편의"
