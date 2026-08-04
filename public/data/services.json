@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-08-04T04:44:33.564382+09:00",
+  "updated_at": "2026-08-05T04:42:49.561147+09:00",
   "services": [
+    {
+      "name": "T폰교체 폴더블8 상품안내",
+      "description": "SKT 재기변 & T안심보상 단말 매각 시 OC캐쉬백 포인트를 지급하는 SKT만의 기기변경 상품입니다.",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 5000,
+          "prod_id": "MA00000058",
+          "url": "https://www.tworld.co.kr/web/product/callplan/MA00000058"
+        }
+      ],
+      "new_since": "2026-08-05",
+      "category": "기기케어"
+    },
     {
       "name": "V프로필",
       "description": "전화 걸 때 나를 표현하는 프로필 영상을 보여주는 새로운 V 프로필 서비스",
