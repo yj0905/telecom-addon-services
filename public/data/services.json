@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-08-05T04:42:49.561147+09:00",
+  "updated_at": "2026-08-06T04:42:06.694645+09:00",
   "services": [
+    {
+      "name": "KT 휴대폰 결제 구독 서비스",
+      "description": "앱스토어 결제 혜택\n구독 전용 결제 할인 혜택",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 4900,
+          "prod_id": "1700",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1700"
+        }
+      ],
+      "new_since": "2026-08-06",
+      "category": "인증/결제"
+    },
     {
       "name": "T폰교체 폴더블8 상품안내",
       "description": "SKT 재기변 & T안심보상 단말 매각 시 OC캐쉬백 포인트를 지급하는 SKT만의 기기변경 상품입니다.",
@@ -5701,19 +5715,6 @@
       "category": "통화/문자"
     },
     {
-      "name": "ARS안심인증",
-      "description": "휴대폰 간편결제\nARS 인증 보안",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "996",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=996"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
       "name": "KT 안심박스 프리",
       "description": "유해 사이트 및 유해 앱 차단",
       "carriers": [
@@ -5825,11 +5826,11 @@
     },
     {
       "name": "KT 245 폰체인지",
-      "description": "2년 사용 후, 반납 시 최대 50% 보장\n폰교체 1회 제공 (새폰 교체 12개월 이내)\n245 폰체인지 포인트 제공",
+      "description": "2/3년 사용 후, 반납 시 최대 50% 보장\n폰교체 1회 제공 (새폰 교체 12개월 이내)\n폰체인지 포인트 제공",
       "carriers": [
         {
           "carrier": "KT",
-          "price": 9900,
+          "price": 9500,
           "prod_id": "1675",
           "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1675"
         }
