@@ -1,19 +1,33 @@
 {
-  "updated_at": "2026-08-06T04:42:06.694645+09:00",
+  "updated_at": "2026-08-07T09:06:18.119328+09:00",
   "services": [
     {
-      "name": "KT 휴대폰 결제 구독 서비스",
-      "description": "앱스토어 결제 혜택\n구독 전용 결제 할인 혜택",
+      "name": "이동의재미",
+      "description": "차량에 대한 모든 정보와 정비 관리, 알찬 혜택과 생활보장까지 누릴 수 있는 올인원 차량 케어 서비스",
       "carriers": [
         {
-          "carrier": "KT",
-          "price": 4900,
-          "prod_id": "1700",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1700"
+          "carrier": "SKT",
+          "price": 9900,
+          "prod_id": "NC00000234",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000234"
         }
       ],
-      "new_since": "2026-08-06",
-      "category": "인증/결제"
+      "new_since": "2026-08-07",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "생활의재미",
+      "description": "일상속 필요한 혜택과 보상을 제공하는 제휴부가서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 9900,
+          "prod_id": "NC00000235",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000235"
+        }
+      ],
+      "new_since": "2026-08-07",
+      "category": "혜택/편의"
     },
     {
       "name": "T폰교체 폴더블8 상품안내",
@@ -4478,6 +4492,20 @@
         }
       ],
       "category": "혜택/편의"
+    },
+    {
+      "name": "KT 휴대폰 결제 구독 서비스",
+      "description": "앱스토어 결제 혜택\n구독 전용 결제 할인 혜택",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 4900,
+          "prod_id": "1700",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1700"
+        }
+      ],
+      "new_since": "2026-08-06",
+      "category": "인증/결제"
     },
     {
       "name": "내 마음대로 2시간 데이터 프리",
