@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T04:03:45.667328+09:00",
+  "updated_at": "2026-08-09T03:44:05.149779+09:00",
   "services": [
     {
       "name": "이동의재미",
@@ -4494,20 +4494,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "KT 휴대폰 결제 구독 서비스",
-      "description": "앱스토어 결제 혜택\n구독 전용 결제 할인 혜택",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 4900,
-          "prod_id": "1700",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1700"
-        }
-      ],
-      "new_since": "2026-08-06",
-      "category": "인증/결제"
-    },
-    {
       "name": "내 마음대로 2시간 데이터 프리",
       "description": "원하는 시간 선택\n매일 2시간 데이터 무제한",
       "carriers": [
@@ -5955,6 +5941,20 @@
         }
       ],
       "category": "혜택/편의"
+    },
+    {
+      "name": "KT 휴대폰 결제 구독 서비스",
+      "description": "앱스토어 결제 혜택\n구독 전용 결제 할인 혜택",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 4900,
+          "prod_id": "1700",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1700"
+        }
+      ],
+      "new_since": "2026-08-06",
+      "category": "인증/결제"
     },
     {
       "name": "딥엘 (DeepL)",
