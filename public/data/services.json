@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-08-12T04:07:50.726287+09:00",
+  "updated_at": "2026-08-13T04:06:52.796714+09:00",
   "services": [
+    {
+      "name": "디톡스케어",
+      "description": "사진 기반 섭취 기록을 통해 식단, 카페인, 알코올, 생활 습관 형성과 실질적인 건강 개선 지원 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 4400,
+          "prod_id": "NC00000238",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000238"
+        }
+      ],
+      "new_since": "2026-08-13",
+      "category": "혜택/편의"
+    },
     {
       "name": "이동의재미",
       "description": "차량에 대한 모든 정보와 정비 관리, 알찬 혜택과 생활보장까지 누릴 수 있는 올인원 차량 케어 서비스",
