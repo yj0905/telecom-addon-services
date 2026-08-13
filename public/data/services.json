@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T04:06:52.796714+09:00",
+  "updated_at": "2026-08-14T04:08:01.342276+09:00",
   "services": [
     {
       "name": "디톡스케어",
@@ -2822,19 +2822,6 @@
       "category": "기기케어"
     },
     {
-      "name": "배터리교체서비스",
-      "description": "TWD에서 가입한 랜탈 가입 고객 대상 사은품으로 제공하기 위한 서비스 입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 880,
-          "prod_id": "NA00006169",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006169"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
       "name": "지켜줘서 고마워_현역플랜",
       "description": "현역 군인 고객이 휴가ㆍ외출ㆍ외박 시 이용가능한 특화 요금제",
       "carriers": [
@@ -2846,19 +2833,6 @@
         }
       ],
       "category": "혜택/편의"
-    },
-    {
-      "name": "폰기능상담24",
-      "description": "앱상품으로 24시간 고객에게 단말의 성능, 연결등을 채팅과 음성으로 상담해주는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00005981",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00005981"
-        }
-      ],
-      "category": "기기케어"
     },
     {
       "name": "출퇴근 프리",
@@ -4427,59 +4401,6 @@
         }
       ],
       "category": "안심/보안"
-    },
-    {
-      "name": "분실파손 iOS 맥스",
-      "description": "분실파손에 대비할 수 있는 보험 연계 서비스 입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 9000,
-          "prod_id": "NA00006235",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006235"
-        }
-      ],
-      "new_since": "2026-05-22",
-      "category": "기기케어"
-    },
-    {
-      "name": "T All케어 iOS 맥스",
-      "description": "분실, 파손 등 단말기 사용 시 발생할 수 있는사고에 대비할 수 있는 보험 연계 서비스 입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 10100,
-          "prod_id": "NA00006236",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006236"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
-      "name": "T 렌탈보험 i 맥스",
-      "description": "랜탈 고객 대상 단말 분실 파손 보험입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 9000,
-          "prod_id": "NA00006237",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006237"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
-      "name": "R All케어 i 맥스",
-      "description": "랜탈 고객 전용 단말 분실 파손 보험 상품입니다.",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 10100,
-          "prod_id": "NA00006238",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006238"
-        }
-      ],
-      "category": "기기케어"
     },
     {
       "name": "T가족모아데이터",
