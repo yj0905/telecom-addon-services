@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T03:45:15.394548+09:00",
+  "updated_at": "2026-08-20T03:41:25.273750+09:00",
   "services": [
     {
       "name": "디톡스케어",
@@ -2005,19 +2005,6 @@
         }
       ],
       "category": "혜택/편의"
-    },
-    {
-      "name": "갤럭시S22 클럽",
-      "description": "SKT의 중고폰 보장 프로그램",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": "유료",
-          "prod_id": "NA00007642",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00007642"
-        }
-      ],
-      "category": "기기케어"
     },
     {
       "name": "군인 속도제어해제",
