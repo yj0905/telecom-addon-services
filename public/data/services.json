@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-09-04T05:47:48.728739+09:00",
+  "updated_at": "2026-09-05T05:35:03.843538+09:00",
   "services": [
+    {
+      "name": "멍과함께",
+      "description": "반려견 양육방법과 개물림 사고 보상 및 사망 시 장례지원금을 제공하는 반려견 토탈관리서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 4400,
+          "prod_id": "NC00000198",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000198"
+        }
+      ],
+      "new_since": "2026-09-05",
+      "category": "혜택/편의"
+    },
     {
       "name": "디톡스케어",
       "description": "사진 기반 섭취 기록을 통해 식단, 카페인, 알코올, 생활 습관 형성과 실질적인 건강 개선 지원 서비스",
