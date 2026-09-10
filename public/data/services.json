@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-09-10T05:45:24.267441+09:00",
+  "updated_at": "2026-09-11T05:40:27.697378+09:00",
   "services": [
+    {
+      "name": "안심클라우드",
+      "description": "PASS 앱을 통해 통합 클라우드, 문서 보안 기능 등을 제공하는 부가서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 5500,
+          "prod_id": "NA00009954",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00009954"
+        }
+      ],
+      "new_since": "2026-09-11",
+      "category": "콘텐츠"
+    },
     {
       "name": "멍과함께",
       "description": "반려견 양육방법과 개물림 사고 보상 및 사망 시 장례지원금을 제공하는 반려견 토탈관리서비스",
