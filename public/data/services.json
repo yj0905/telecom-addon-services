@@ -1,6 +1,76 @@
 {
-  "updated_at": "2026-09-18T06:09:04.253983+09:00",
+  "updated_at": "2026-09-19T05:42:42.196392+09:00",
   "services": [
+    {
+      "name": "T 아이폰파손 18 Pro",
+      "description": "아이폰 사용자를 위한 프리미엄 보험 서비스(애플제휴)",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 10200,
+          "prod_id": "NA00010031",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00010031"
+        }
+      ],
+      "new_since": "2026-09-19",
+      "category": "기기케어"
+    },
+    {
+      "name": "T 아이폰파손 Air",
+      "description": "아이폰 사용자를 위한 프리미엄 보험 서비스(애플제휴)",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 10200,
+          "prod_id": "NA00010032",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00010032"
+        }
+      ],
+      "new_since": "2026-09-19",
+      "category": "기기케어"
+    },
+    {
+      "name": "T 아이폰파손 17N",
+      "description": "아이폰 사용자를 위한 프리미엄 보험 서비스(애플제휴)",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 7800,
+          "prod_id": "NA00010033",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00010033"
+        }
+      ],
+      "new_since": "2026-09-19",
+      "category": "기기케어"
+    },
+    {
+      "name": "T 아이폰파손 17e",
+      "description": "아이폰 사용자를 위한 프리미엄 보험 서비스(애플제휴)",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 7100,
+          "prod_id": "NA00010034",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00010034"
+        }
+      ],
+      "new_since": "2026-09-19",
+      "category": "기기케어"
+    },
+    {
+      "name": "메디케어",
+      "description": "온 가족 건강 관리 서비스부터 건강식품 할인까지 통합 헬스케어 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 4400,
+          "prod_id": "NC00000237",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NC00000237"
+        }
+      ],
+      "new_since": "2026-09-19",
+      "category": "혜택/편의"
+    },
     {
       "name": "안심클라우드",
       "description": "PASS 앱을 통해 통합 클라우드, 문서 보안 기능 등을 제공하는 부가서비스",
@@ -2675,25 +2745,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "스마트안전결제",
-      "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 990,
-          "prod_id": "NA00006378",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006378"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 990,
-          "prod_id": "LRZ0004132",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004132"
-        }
-      ],
-      "category": "통화/문자"
-    },
-    {
       "name": "모션키",
       "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
       "carriers": [
@@ -2711,6 +2762,25 @@
         }
       ],
       "category": "인증/결제"
+    },
+    {
+      "name": "스마트안전결제",
+      "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 990,
+          "prod_id": "NA00006378",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006378"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 990,
+          "prod_id": "LRZ0004132",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0004132"
+        }
+      ],
+      "category": "통화/문자"
     },
     {
       "name": "스마트피싱보호",
