@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T07:31:12.627020+09:00",
+  "updated_at": "2026-10-03T07:00:37.685952+09:00",
   "services": [
     {
       "name": "T 아이폰파손 18 Pro",
@@ -915,19 +915,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "T 올케어플러스 파손 F7",
-      "description": "갤럭시 Z폴드7/플립7 파손 보험 및 프리미엄 서비스 제공",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 8200,
-          "prod_id": "NA00009476",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00009476"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
       "name": "일상플러스",
       "description": "자동차 및 쇼핑 카테고리의 편의 기능 제공하며, 생활 밀착형 쿠폰 reward를 제공하는 서비스",
       "carriers": [
@@ -988,19 +975,6 @@
           "price": 8900,
           "prod_id": "NA00009199",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00009199"
-        }
-      ],
-      "category": "기기케어"
-    },
-    {
-      "name": "T 올케어플러스 파손S25",
-      "description": "갤럭시S25 파손 보험 및 프리미엄 서비스 제공",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 5200,
-          "prod_id": "NA00009138",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00009138"
         }
       ],
       "category": "기기케어"
