@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T07:32:18.923975+09:00",
+  "updated_at": "2026-10-08T08:07:58.627211+09:00",
   "services": [
     {
       "name": "T 아이폰파손 18 Pro",
@@ -2719,25 +2719,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "모션키",
-      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1100,
-          "prod_id": "NA00006435",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
-        },
-        {
-          "carrier": "LGU+",
-          "price": 1100,
-          "prod_id": "LRZ0003975",
-          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
-        }
-      ],
-      "category": "인증/결제"
-    },
-    {
       "name": "스마트안전결제",
       "description": "스미싱 문자, 악성코드, 의도치 않은 금융 앱 실행, 전화 가로채기 등의 의심 상황 탐지/알림 서비스",
       "carriers": [
@@ -2755,6 +2736,25 @@
         }
       ],
       "category": "통화/문자"
+    },
+    {
+      "name": "모션키",
+      "description": "스마트폰을 흔들거나 터치 또는 기울이는 모션으로 간편하게 로그인하는 서비스",
+      "carriers": [
+        {
+          "carrier": "SKT",
+          "price": 1100,
+          "prod_id": "NA00006435",
+          "url": "https://www.tworld.co.kr/web/product/callplan/NA00006435"
+        },
+        {
+          "carrier": "LGU+",
+          "price": 1100,
+          "prod_id": "LRZ0003975",
+          "url": "https://www.lguplus.com/mobile/plan/addon/addon-familysafety-info/LRZ0003975"
+        }
+      ],
+      "category": "인증/결제"
     },
     {
       "name": "스마트피싱보호",
@@ -3636,19 +3636,6 @@
           "price": 1100,
           "prod_id": "NA00004805",
           "url": "https://www.tworld.co.kr/web/product/callplan/NA00004805"
-        }
-      ],
-      "category": "안심/보안"
-    },
-    {
-      "name": "T 자녀안심",
-      "description": "T 자녀안심 상품은 만 19세 미만 자녀의 안전을 지키는 종합안심서비스",
-      "carriers": [
-        {
-          "carrier": "SKT",
-          "price": 1650,
-          "prod_id": "NA00002352",
-          "url": "https://www.tworld.co.kr/web/product/callplan/NA00002352"
         }
       ],
       "category": "안심/보안"
