@@ -1,62 +1,6 @@
 {
-  "updated_at": "2026-10-14T07:28:03.081810+09:00",
+  "updated_at": "2026-10-15T06:27:39.304899+09:00",
   "services": [
-    {
-      "name": "Google AI",
-      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n더 많은 저장 공간",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 7000,
-          "prod_id": "1712",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1712"
-        }
-      ],
-      "new_since": "2026-10-14",
-      "category": null
-    },
-    {
-      "name": "Google AI Pro(5TB) 생활구독팩",
-      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n매월 생활혜택 ​ 5종 중 원하는 ​ 혜택 1개 선택",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 29000,
-          "prod_id": "1713",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1713"
-        }
-      ],
-      "new_since": "2026-10-14",
-      "category": "혜택/편의"
-    },
-    {
-      "name": "Google AI+메가MGC커피",
-      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n메가MGC커피 아메리카노(HOT) 매월 최대 3잔 제공",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 7500,
-          "prod_id": "1714",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1714"
-        }
-      ],
-      "new_since": "2026-10-14",
-      "category": null
-    },
-    {
-      "name": "Google AI Pro(5TB)+스타벅스",
-      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n스타벅스 아메리카노 매월 한잔 제공",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 29000,
-          "prod_id": "1715",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1715"
-        }
-      ],
-      "new_since": "2026-10-14",
-      "category": null
-    },
     {
       "name": "T 아이폰파손 18 Pro",
       "description": "아이폰 사용자를 위한 프리미엄 보험 서비스(애플제휴)",
@@ -4739,6 +4683,62 @@
         }
       ],
       "category": "데이터"
+    },
+    {
+      "name": "Google AI",
+      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n더 많은 저장 공간",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 7000,
+          "prod_id": "1712",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1712"
+        }
+      ],
+      "new_since": "2026-10-14",
+      "category": null
+    },
+    {
+      "name": "Google AI Pro(5TB) 생활구독팩",
+      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n매월 생활혜택 ​ 5종 중 원하는 ​ 혜택 1개 선택",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 29000,
+          "prod_id": "1713",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1713"
+        }
+      ],
+      "new_since": "2026-10-14",
+      "category": "혜택/편의"
+    },
+    {
+      "name": "Google AI+메가MGC커피",
+      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n메가MGC커피 아메리카노(HOT) 매월 최대 3잔 제공",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 7500,
+          "prod_id": "1714",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1714"
+        }
+      ],
+      "new_since": "2026-10-14",
+      "category": null
+    },
+    {
+      "name": "Google AI Pro(5TB)+스타벅스",
+      "description": "더 강력한 Google Gemini\nGoogle 앱에서 만나는 Gemini\n스타벅스 아메리카노 매월 한잔 제공",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 29000,
+          "prod_id": "1715",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1715"
+        }
+      ],
+      "new_since": "2026-10-14",
+      "category": null
     },
     {
       "name": "티빙 생활구독팩",
