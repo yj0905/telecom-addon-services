@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-10-15T06:27:39.304899+09:00",
+  "updated_at": "2026-10-16T06:09:12.355028+09:00",
   "services": [
+    {
+      "name": "안심365 문자스팸 차단",
+      "description": "스팸문자 자동차단\n특정 번호와 문구도 추가 차단",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 0,
+          "prod_id": "479",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=479"
+        }
+      ],
+      "new_since": "2026-10-16",
+      "category": "통화/문자"
+    },
     {
       "name": "T 아이폰파손 18 Pro",
       "description": "아이폰 사용자를 위한 프리미엄 보험 서비스(애플제휴)",
@@ -4954,7 +4968,7 @@
     },
     {
       "name": "티빙 (KT 구독)",
-      "description": "티빙의 차별화된 오리지널 콘텐츠\ntvN, JTBC, Mnet 등 실시간 채널과 최신 인기프로그램\n스포츠 명승부와 애니메어션까지!",
+      "description": "티빙의 차별화된 오리지널 콘텐츠\n3개월 가격으로 6개월 구독!!!\n스포츠 명승부와 애니메어션까지!",
       "carriers": [
         {
           "carrier": "KT",
@@ -5685,19 +5699,6 @@
         }
       ],
       "category": "안심/보안"
-    },
-    {
-      "name": "(안심) 스팸차단",
-      "description": "스팸문자 자동차단\n특정 번호와 문구도 추가 차단",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "479",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=479"
-        }
-      ],
-      "category": "통화/문자"
     },
     {
       "name": "(안심) 후후스팸알림",
