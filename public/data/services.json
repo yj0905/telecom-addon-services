@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T05:46:05.297305+09:00",
+  "updated_at": "2026-10-18T05:22:25.403401+09:00",
   "services": [
     {
       "name": "T 아이폰파손 18 Pro",
@@ -4461,20 +4461,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "안심365 문자스팸 차단",
-      "description": "스팸문자 자동차단\n특정 번호와 문구도 추가 차단",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 0,
-          "prod_id": "479",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=479"
-        }
-      ],
-      "new_since": "2026-10-16",
-      "category": "통화/문자"
-    },
-    {
       "name": "내 마음대로 2시간 데이터 프리",
       "description": "원하는 시간 선택\n매일 2시간 데이터 무제한",
       "carriers": [
@@ -5699,6 +5685,20 @@
         }
       ],
       "category": "안심/보안"
+    },
+    {
+      "name": "안심365 문자스팸 차단",
+      "description": "스팸문자 자동차단\n특정 번호와 문구도 추가 차단",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 0,
+          "prod_id": "479",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=479"
+        }
+      ],
+      "new_since": "2026-10-16",
+      "category": "통화/문자"
     },
     {
       "name": "(안심) 후후스팸알림",
