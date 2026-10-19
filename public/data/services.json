@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T05:22:38.019991+09:00",
+  "updated_at": "2026-10-20T07:10:47.202563+09:00",
   "services": [
     {
       "name": "T 아이폰파손 18 Pro",
@@ -5902,6 +5902,20 @@
       "category": "기기케어"
     },
     {
+      "name": "KT 휴대폰 결제 구독 서비스",
+      "description": "앱스토어 결제 혜택\n구독 전용 결제 할인 혜택",
+      "carriers": [
+        {
+          "carrier": "KT",
+          "price": 4900,
+          "prod_id": "1700",
+          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1700"
+        }
+      ],
+      "new_since": "2026-08-06",
+      "category": "인증/결제"
+    },
+    {
       "name": "휴대폰 결제",
       "description": "휴대폰 간편결제",
       "carriers": [
@@ -5967,20 +5981,6 @@
       "category": "혜택/편의"
     },
     {
-      "name": "KT 휴대폰 결제 구독 서비스",
-      "description": "앱스토어 결제 혜택\n구독 전용 결제 할인 혜택",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 4900,
-          "prod_id": "1700",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1700"
-        }
-      ],
-      "new_since": "2026-08-06",
-      "category": "인증/결제"
-    },
-    {
       "name": "딥엘 (DeepL)",
       "description": "탁월한고품질 번역\n텍스트 및 파일 번역 맞춤형 제어\n다양한 플랫폼에서 손쉽게 번역",
       "carriers": [
@@ -6044,19 +6044,6 @@
         }
       ],
       "category": "통화/문자"
-    },
-    {
-      "name": "KT 콘텐츠박스",
-      "description": "",
-      "carriers": [
-        {
-          "carrier": "KT",
-          "price": 4400,
-          "prod_id": "1032",
-          "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1032"
-        }
-      ],
-      "category": "콘텐츠"
     },
     {
       "name": "내위치전송 서비스",
