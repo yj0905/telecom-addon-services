@@ -159,7 +159,7 @@
         }
       ],
       "new_since": "2026-07-15",
-      "category": null
+      "category": "통화/문자"
     },
     {
       "name": "오피스도우미",
@@ -4696,7 +4696,7 @@
         }
       ],
       "new_since": "2026-10-14",
-      "category": null
+      "category": "콘텐츠"
     },
     {
       "name": "Google AI Pro(5TB) 생활구독팩",
@@ -4724,7 +4724,7 @@
         }
       ],
       "new_since": "2026-10-14",
-      "category": null
+      "category": "콘텐츠"
     },
     {
       "name": "Google AI Pro(5TB)+스타벅스",
@@ -4738,7 +4738,7 @@
         }
       ],
       "new_since": "2026-10-14",
-      "category": null
+      "category": "콘텐츠"
     },
     {
       "name": "티빙 생활구독팩",
