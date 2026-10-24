@@ -1,9 +1,6 @@
 name: Crawl Telecom Addon Services
 
 on:
-  schedule:
-    # 매일 밤 3시 KST = 18:00 UTC (전날)
-    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
